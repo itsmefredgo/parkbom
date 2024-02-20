@@ -1,13 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-export default function Home() {
+export default function Location({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Header />
-      <main className="">
-        <div>hello</div>
-      </main>
+      {children}
       <Footer />
     </div>
   );
