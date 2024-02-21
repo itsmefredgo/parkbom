@@ -19,9 +19,3 @@ export default function Header() {
     </header>
   );
 }
-
-{
-  /* {pages.map((page) => {
-          return <Link href={"/" + page.toLowerCase()}>{page}</Link>;
-        })} */
-}

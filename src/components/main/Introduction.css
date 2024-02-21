@@ -1,0 +1,17 @@
+.home-introduction {
+  height: 20rem;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home-introduction > * {
+  border: blue 2px solid;
+}
+.home-introduction-statement {
+  height: 100%;
+  padding-top: 3rem;
+}
+.home-introduction-image {
+  height: 100%;
+}
