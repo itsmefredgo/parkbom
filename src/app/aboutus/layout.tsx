@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/includes/Footer";
+import Header from "@/components/includes/Header";
 
 export default function Location({ children }: { children: React.ReactNode }) {
   return (

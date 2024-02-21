@@ -2,7 +2,7 @@ export default function Location() {
   return (
     <div>
       <main className="">
-        <div>This is Location information</div>
+        <div>This is classes information</div>
       </main>
     </div>
   );

@@ -1,14 +1,11 @@
 import Footer from "@/components/includes/Footer";
 import Header from "@/components/includes/Header";
-import Introduction from "@/components/main/Introduction";
 
-export default function Home() {
+export default function Location({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Header />
-      <main className="">
-        <Introduction />
-      </main>
+      {children}
       <Footer />
     </div>
   );

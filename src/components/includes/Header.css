@@ -1,0 +1,27 @@
+.header {
+  height: 10rem;
+  /* border: red solid 1px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 2rem 1rem;
+  border-bottom: black 1px solid;
+}
+.header > * {
+  /* border: blue 1px solid; */
+}
+.header-navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+.header-navigation > * {
+  margin-left: 3rem;
+}
+.header-functions {
+  display: flex;
+  justify-content: flex-end;
+  width: 20rem;
+}
+.header-functions > button {
+  margin-right: 1rem;
+}
