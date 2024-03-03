@@ -2,11 +2,19 @@ import "./Introduction.css";
 import Image from "next/image";
 
 import frederick_snow_1 from "@/assets/images/placeholder.png";
+import parkbom_logo from "@/assets/images/parkbomlogo.png";
 
 export default function Introduction() {
   return (
     <section className="home-introduction">
+      <div className="home-introduction-bg"></div>
       <div className="home-introduction-statement">
+        <Image
+          className="parkbomlogo"
+          src={parkbom_logo}
+          alt="Parkbom"
+          height={100}
+        ></Image>
         <p>
           여기에 학원 철학을 적을 예정이오 울라울라울라울라 울라울라
           <br />
@@ -15,7 +23,7 @@ export default function Introduction() {
           <br />
         </p>
       </div>
-      <div className="home-introduction-image">
+      {/* <div className="home-introduction-image">
         <Image
           className="main-introduction-photo-item"
           src={frederick_snow_1}
@@ -23,7 +31,7 @@ export default function Introduction() {
           // layout={"fill"}
           // objectFit={"contain"}
         ></Image>
-      </div>
+      </div> */}
     </section>
   );
 }
