@@ -5,7 +5,7 @@ import frederick_snow_1 from "@/assets/images/placeholder.png";
 
 export default function Introduction() {
   return (
-    <div className="home-introduction">
+    <section className="home-introduction">
       <div className="home-introduction-statement">
         <p>
           여기에 학원 철학을 적을 예정이오 울라울라울라울라 울라울라
@@ -24,6 +24,6 @@ export default function Introduction() {
           // objectFit={"contain"}
         ></Image>
       </div>
-    </div>
+    </section>
   );
 }

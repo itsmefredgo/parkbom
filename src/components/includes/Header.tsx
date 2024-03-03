@@ -4,7 +4,7 @@ import "./Header.css";
 export default function Header() {
   const pages: string[] = ["학원 소개", "수업", "문의 및 위치"];
   return (
-    <header className="header">
+    <header>
       <div className="header-navigation">
         <Link href={"/"}>박봄 수학 영어</Link>
         <div className="header-navigation-divider">|</div>
