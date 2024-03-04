@@ -16,52 +16,27 @@ export default function HomeClasses() {
       <div className="home-classes-contents">
         <div className="home-classes-math">
           <h1>수학</h1>
-          <ul>
+          <ul className="home-classes-math-list">
             <li>초등 (1~6)</li>
             <li>중등 (1~3)</li>
             <li>고등 (1~3)</li>
           </ul>
-          <ul>
+          <ul className="home-classes-math-list">
             <li>경시대회 준비</li>
           </ul>
         </div>
         <div className="home-classes-eng">
           <h1>영어</h1>
-          <ul>
+          <ul className="home-classes-eng-list">
             <li>초등 (1~6)</li>
             <li>중등 (1~3)</li>
             <li>고등 (1~3)</li>
           </ul>
+          <ul className="home-classes-eng-placeholder">
+            <li>&nbsp;</li>
+          </ul>
         </div>
       </div>
-      {/* <div className="home-classes-contents">
-        <div className="home-classes-math">
-          <h2>수학</h2>
-          <div className="home-classes-math-detail">
-            <ul>
-              <li>초</li>
-              <li>중</li>
-              <li>고고</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="home-classes-english">
-          <h2>영어</h2>
-          <div className="home-classes-english-detail"><ul>
-              <li>초</li>
-              <li>중</li>
-              <li>고고</li>
-            </ul></div>
-        </div>
-
-        <div className="home-classes-competition">
-          <h2>경시대회 준비</h2>
-          <div className="home-classes-english-detail">
-            경시대회 준비 할까 말까
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

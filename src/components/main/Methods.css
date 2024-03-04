@@ -1,0 +1,62 @@
+.home-methods {
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: calc((100vw - 60rem) / 2);
+  padding-left: calc((100vw - 60rem) / 2);
+  padding-top: 4rem;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+.home-methods-title {
+  border-bottom: #848d97 solid 0.1em;
+  padding-left: 0.1rem;
+  padding-bottom: 0.25rem;
+  color: #848d97;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 15%;
+}
+.home-methods-title > .methods-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.home-methods-title > .viewmore-link {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.methods-contents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  /* grid-gap: 2rem; */
+}
+.contents-grid-item {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border: #30363d solid 0.3rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure the overflow does not affect the layout */
+  font-size: 1rem;
+  transition: font-size 0.3s ease; /* Apply transition for a smooth effect */
+}
+
+.contents-grid-item:hover {
+  font-size: 2rem;
+  border: #334e6d solid 0.3rem;
+}
+
+.contents-grid-item:first-child,
+.contents-grid-item:nth-child(2) {
+  margin-top: 4rem;
+}
