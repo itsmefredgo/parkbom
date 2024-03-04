@@ -1,0 +1,74 @@
+.home-classes {
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60rem;
+  padding-top: 8rem;
+}
+.home-classes-title {
+  border-bottom: #555555 solid 0.1em;
+  padding-left: 0.1rem;
+  padding-bottom: 0.25rem;
+  color: #555555;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5%;
+}
+.home-classes-title > .classes-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.home-classes-title > .viewmore-link {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.home-classes-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  height: 95%;
+}
+.home-classes-contents > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+.home-classes-contents > div > h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.home-classes-contents > div > ul {
+  list-style-type: circle;
+  padding-left: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+/* .home-classes-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70vh;
+}
+.home-classes-contents > * {
+  background-color: #4c6533a2;
+  color: white;
+  padding: 2rem;
+  width: 30%;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+.home-classes-contents > * > h2 {
+  color: white;
+  font-size: 1.5rem;
+} */

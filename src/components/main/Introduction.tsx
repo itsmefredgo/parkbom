@@ -1,13 +1,11 @@
 import "./Introduction.css";
 import Image from "next/image";
 
-import frederick_snow_1 from "@/assets/images/placeholder.png";
-import parkbom_logo from "@/assets/images/parkbomlogo.png";
+import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
 
 export default function Introduction() {
   return (
     <section className="home-introduction">
-      <div className="home-introduction-bg"></div>
       <div className="home-introduction-statement">
         <Image
           className="parkbomlogo"
@@ -16,22 +14,11 @@ export default function Introduction() {
           height={100}
         ></Image>
         <p>
-          여기에 학원 철학을 적을 예정이오 울라울라울라울라 울라울라
-          <br />
-          울라울라 울라울라울라울라 울라울라 울라울라 <br />
-          울라울라 울라울라 울라울라울라울라 울라울라
-          <br />
+          학문의 시작부터 끝까지, <br />
+          수학과 영어의 핵심을 강화하는 특별한 학습 경험을 만나보세요. <br />
+          초, 중, 고 학년 모두에게 적합한 최고의 교육을 제공합니다.
         </p>
       </div>
-      {/* <div className="home-introduction-image">
-        <Image
-          className="main-introduction-photo-item"
-          src={frederick_snow_1}
-          alt="Frederick Go"
-          // layout={"fill"}
-          // objectFit={"contain"}
-        ></Image>
-      </div> */}
     </section>
   );
 }
