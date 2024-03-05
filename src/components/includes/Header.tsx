@@ -2,18 +2,27 @@ import Link from "next/link";
 import "./Header.css";
 
 export default function Header() {
-  const pages: string[] = ["학원 소개", "수업", "문의 및 위치"];
+  // Header Navigation Links Generation Helper
+  const pages: [string, string][] = [
+    ["학원 소개", "/aboutus"],
+    ["수업", "/classes"],
+    ["문의 및 위치", "/inquiries"],
+  ];
   return (
     <header>
-      <div className="header-navigation">
+      <div className="navbar">
         <Link href={"/"}>박봄 수학 영어</Link>
-        <div className="header-navigation-divider">|</div>
-        <Link href={"/aboutus"}>학원 소개</Link>
-        <Link href={"/classes"}>수업</Link>
-        <Link href={"/inquiries"}>문의 및 위치</Link>
+        <div className="navbar-divider">|</div>
+        {/* Header Navigation Links Generation */}
+        {pages.map(([displayText, route], index) => (
+          <Link key={index} href={route}>
+            {displayText}
+          </Link>
+        ))}
       </div>
-      <div className="header-functions">
-        <button>dark</button>
+      {/* Functions in Nav Bar */}
+      <div className="navbar-function">
+        {/* Funtion toggling Language change */}
         <button>Eng</button>
       </div>
     </header>

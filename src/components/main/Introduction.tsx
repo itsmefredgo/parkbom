@@ -1,11 +1,13 @@
 import "./Introduction.css";
 import Image from "next/image";
 
+// Parkbom Logo with transparent background
 import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
 
 export default function Introduction() {
   return (
     <section className="home-introduction">
+      {/* Introduction section paragraph */}
       <div className="home-introduction-statement">
         <Image
           className="parkbomlogo"

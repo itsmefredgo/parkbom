@@ -1,31 +1,33 @@
-* {
-  /* border: red solid 1px; */
-}
 header {
+  /* Header Theme */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+
+  /* Header Display */
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  /* Header Location and Size */
+  height: 5rem;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
-  font-size: 1.25rem;
 }
-.header-navigation {
+.navbar {
+  /* Navagation Links */
   display: flex;
   justify-content: flex-start;
 }
-.header-navigation > :not(:first-child) {
+.navbar > :not(:first-child) {
   margin-left: 3rem;
 }
-.header-functions {
+.navbar-function {
   display: flex;
   justify-content: flex-end;
 }
-.header-functions > :not(:last-child) {
+.navbar-function > :not(:last-child) {
   margin-right: 3rem;
 }
