@@ -1,8 +1,8 @@
 "use client";
 
-import type { RootState } from "./Redux/store";
+import type { RootState } from "../Redux/store";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleDarkMode } from "./Redux/Features/darkModeSlice";
+import { toggleDarkMode } from "../Redux/Features/darkModeSlice";
 
 import Footer from "@/components/includes/Footer";
 import Header from "@/components/includes/Header";
