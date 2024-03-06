@@ -14,7 +14,7 @@ export default function Introduction() {
           초, 중, 고 학년 모두에게 적합한 최고의 교육을 제공합니다.
         </p>
       </div>
-      <div className="bg-[url('/../../assets/images/main-bg.jpeg')] absolute inset-0 -z-10 bg-cover bg-top opacity-30"></div>
+      <div className="bg-[url('/../../assets/images/main-bg.jpeg')] absolute inset-0 -z-10 bg-cover bg-top opacity-60 dark:brightness-50"></div>
     </section>
   );
 }

@@ -4,6 +4,9 @@ import Link from "next/link";
 import "./Header.css";
 import { useState } from "react";
 
+import { useSelector, useDispatch } from "react-redux";
+import { toggleDarkMode } from "@/app/Redux/Features/darkModeSlice";
+
 export default function Header() {
   // Header Navigation Links Generation Helper
   const pages: [string, string][] = [
@@ -11,13 +14,10 @@ export default function Header() {
     ["수업", "/classes"],
     ["문의 및 위치", "/inquiries"],
   ];
-  const [darkMode, setDarkMode] = useState(false);
+  const dispatch = useDispatch();
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
   return (
-    <header className={`${darkMode && "dark"}`}>
+    <header>
       <div className="navbar text-black dark:text-white">
         <Link href={"/"}>박봄 수학 영어</Link>
         <div className="navbar-divider">|</div>
@@ -31,7 +31,7 @@ export default function Header() {
       {/* Functions in Nav Bar */}
       <div className="navbar-function">
         {/* Funtion toggling Language change */}
-        <button onClick={toggleDarkMode}>DARK</button>
+        <button onClick={() => dispatch(toggleDarkMode())}>DARK</button>
       </div>
     </header>
   );
