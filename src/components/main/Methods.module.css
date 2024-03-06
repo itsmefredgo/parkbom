@@ -1,13 +1,8 @@
-/* HomeMethods.module.css */
-
 .selectedItem {
-  /* Add styling for the selected item title here */
   text-decoration: underline;
 }
 
 .selected {
-  /* Add styling for the selected item in the grid here */
-  /* text-decoration: underline; */
   font-weight: bold;
   border: #131518 solid 0.1rem;
 }

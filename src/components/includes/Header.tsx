@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import "./Header.css";
+import { useState } from "react";
 
 export default function Header() {
   // Header Navigation Links Generation Helper
@@ -8,9 +11,14 @@ export default function Header() {
     ["수업", "/classes"],
     ["문의 및 위치", "/inquiries"],
   ];
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <header>
-      <div className="navbar">
+    <header className={`${darkMode && "dark"}`}>
+      <div className="navbar text-black dark:text-white">
         <Link href={"/"}>박봄 수학 영어</Link>
         <div className="navbar-divider">|</div>
         {/* Header Navigation Links Generation */}
@@ -23,7 +31,7 @@ export default function Header() {
       {/* Functions in Nav Bar */}
       <div className="navbar-function">
         {/* Funtion toggling Language change */}
-        <button>Eng</button>
+        <button onClick={toggleDarkMode}>DARK</button>
       </div>
     </header>
   );

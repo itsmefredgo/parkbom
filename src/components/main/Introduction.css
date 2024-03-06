@@ -9,7 +9,7 @@
   padding-left: 15%;
 }
 .home-introduction-statement::before {
-  background-image: url("../../assets/images/main-bg.jpeg");
+  background-image: url("/assets/images/main-bg.jpeg");
   content: "";
   position: absolute;
   top: 0;

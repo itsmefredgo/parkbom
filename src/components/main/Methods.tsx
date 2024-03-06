@@ -93,9 +93,7 @@ export default function HomeMethods() {
           {methodItems.map(({ title, description }, index) => (
             <div
               key={index}
-              className={`contents-grid-item ${
-                selectedItem?.title === title ? styles.selected : ""
-              }`}
+              className={`contents-grid-item ${selectedItem?.title === title ? styles.selected : ""}`}
               onClick={() => handleItemSelected(title, description)}
             >
               {title}
