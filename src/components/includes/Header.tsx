@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 // import { toggleDarkMode } from "../../Redux/Features/darkModeSlice";
-import { toggleDarkMode } from "./darkModeSlice";
+import { toggleDarkMode } from "@/Redux/Features/darkModeSlice";
 
 export default function Header() {
   // Header Navigation Links Generation Helper

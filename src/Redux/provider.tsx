@@ -2,7 +2,7 @@
 
 import { Provider } from "react-redux";
 import { store } from "./store";
-import { DarkModeState } from "../components/includes/darkModeSlice";
+import { DarkModeState } from "./Features/darkModeSlice";
 import { ReactNode } from "react";
 interface ProvidersProps {
   children: ReactNode;

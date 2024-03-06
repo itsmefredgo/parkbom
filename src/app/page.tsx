@@ -2,7 +2,7 @@
 
 import type { RootState } from "../Redux/store";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleDarkMode } from "../components/includes/darkModeSlice";
+import { toggleDarkMode } from "../Redux/Features/darkModeSlice";
 
 import Footer from "@/components/includes/Footer";
 import Header from "@/components/includes/Header";
