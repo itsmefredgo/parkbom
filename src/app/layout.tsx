@@ -5,6 +5,7 @@ import "./globals.css";
 import { Providers } from "../Redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
+import { toggleDarkMode } from "@/Redux/Features/darkModeSlice";
 
 export const metadata: Metadata = {
   title: "박봄수학영어",

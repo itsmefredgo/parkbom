@@ -11,16 +11,17 @@ import Methods from "@/components/main/Methods";
 import Classes from "@/components/main/Classes";
 import Inquiries from "@/components/main/Inquiries";
 import { log } from "console";
+import { text } from "stream/consumers";
 
 export default function Home() {
   const darkMode = useSelector(
     (state: RootState) => state.darkMode.darkModeState
   );
 
-  console.log(darkMode);
+  // localStorage.setItem("darkMode", darkMode);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={`${darkMode ? "dark" : ""}`}>
       <Header />
       <main>
         <Introduction />

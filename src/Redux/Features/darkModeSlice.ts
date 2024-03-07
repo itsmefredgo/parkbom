@@ -16,6 +16,7 @@ export const darkModeSlice = createSlice({
   reducers: {
     toggleDarkMode: (state) => {
       state.darkModeState = !state.darkModeState;
+      const isDarkMode = !localStorage.getItem("darkMode"); // Invert current state
     },
   },
 });

@@ -1,15 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import "./Header.css";
-import { useState } from "react";
+import { IoMoon } from "react-icons/io5";
 
-import { useSelector, useDispatch } from "react-redux";
-// import { toggleDarkMode } from "../../Redux/Features/darkModeSlice";
+import { useDispatch } from "react-redux";
 import { toggleDarkMode } from "@/Redux/Features/darkModeSlice";
 
 export default function Header() {
-  // Header Navigation Links Generation Helper
   const pages: [string, string][] = [
     ["학원 소개", "/aboutus"],
     ["수업", "/classes"],
@@ -18,21 +15,27 @@ export default function Header() {
   const dispatch = useDispatch();
 
   return (
-    <header>
-      <div className="navbar text-black dark:text-white">
+    <header
+      className="flex justify-around items-center shadow-lg text-xl fixed w-screen h-20 z-10
+      bg-opacity-60 bg-white 
+      dark:bg-opacity-20 dark:bg-black dark:text-white "
+    >
+      <div className=" flex">
         <Link href={"/"}>박봄 수학 영어</Link>
-        <div className="navbar-divider">|</div>
+        <div className="ml-12">|</div>
         {/* Header Navigation Links Generation */}
         {pages.map(([displayText, route], index) => (
-          <Link key={index} href={route}>
+          <Link key={index} href={route} className=" ml-12">
             {displayText}
           </Link>
         ))}
       </div>
       {/* Functions in Nav Bar */}
-      <div className="navbar-function">
+      <div className="">
         {/* Funtion toggling Language change */}
-        <button onClick={() => dispatch(toggleDarkMode())}>DARK</button>
+        <button onClick={() => dispatch(toggleDarkMode())}>
+          <IoMoon />
+        </button>
       </div>
     </header>
   );
