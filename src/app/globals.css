@@ -8,6 +8,10 @@ body {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
+* {
+  /* border: red solid 2px; */
+}
+
 /* header,
 main *,
 footer {

@@ -1,5 +1,4 @@
 import "./Inquiries.css";
-import Image from "next/image";
 
 export default function HomeInquiries() {
   return (
@@ -8,6 +7,7 @@ export default function HomeInquiries() {
         <div className="inquiries-title">
           <h1>Inquiries</h1>
         </div>
+        <div className="map"></div>
         <div className="viewmore-link">
           <button>자세히보기</button>
         </div>

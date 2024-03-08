@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { IoMoon } from "react-icons/io5";
+import { IoMdSunny } from "react-icons/io";
 
 import { useDispatch } from "react-redux";
 import { toggleDarkMode } from "@/Redux/Features/darkModeSlice";
@@ -34,7 +35,8 @@ export default function Header() {
       <div className="">
         {/* Funtion toggling Language change */}
         <button onClick={() => dispatch(toggleDarkMode())}>
-          <IoMoon />
+          <IoMoon className="block dark:hidden" />
+          <IoMdSunny className="hidden dark:block" />
         </button>
       </div>
     </header>
