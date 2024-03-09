@@ -1,5 +1,5 @@
 import "./Inquiries.css";
-import KakaoMap from "./Kakaomap";
+import KakaoMap from "./Map";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCaretRight } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
