@@ -4,7 +4,7 @@ import { TbMessageLanguage } from "react-icons/tb";
 
 export default function HomeClasses() {
   return (
-    <section className=" h-[30rem] px-[calc((100vw-60rem)/2)] bg-[#d6d6d5] pt-28 dark:bg-[#4d4e4c] text-[#56595d] dark:text-[#EFE7E1]">
+    <section className=" h-[30rem] px-[calc((100vw-60rem)/2)] bg-[#aaaaaadd] pt-28 dark:bg-[#4d4e4c] text-[#56595d] dark:text-[#EFE7E1]">
       <div className=" border-b-2 border-b-[#56595d] dark:border-b-[#EFE7E1]  flex justify-between pb-1">
         <div className=" text-xl">
           <h1>Classes</h1>
