@@ -18,16 +18,16 @@ export default function Header() {
   return (
     <header
       className=" flex justify-around items-center shadow-lg text-xl fixed w-screen h-20 z-10
-      bg-[#EFE7E1] text-[#0F4B43] bg-opacity-60 font-semibold 
-      dark:bg-[#525651] dark:text-[#EFE7E1] dark:bg-opacity-60"
+      bg-parkbom05 text-parkbom18 bg-opacity-60 font-semibold 
+      dark:bg-parkbom18 dark:text-parkbom05 dark:bg-opacity-60"
     >
       <div className=" flex">
         <Link href={"/"}>박봄 수학 영어</Link>
         <div className="ml-12">|</div>
         {/* Header Navigation Links Generation */}
-        {pages.map(([displayText, route], index) => (
+        {pages.map(([pageName, route], index) => (
           <Link key={index} href={route} className=" ml-12">
-            {displayText}
+            {pageName}
           </Link>
         ))}
       </div>
