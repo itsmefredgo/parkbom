@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        tablet: "768px",
+        laptop: "1200px",
+      },
       colors: {
         parkbomLightBg00: "#F2F1EB",
         parkbomLightBg01: "#F7F6F0",
@@ -26,6 +30,11 @@ const config: Config = {
         parkbomDarkBg04: "#88AB8E",
         parkbomLightText: "#FFFFFF",
         parkbomDarkText: "#000000",
+      },
+      after: {
+        clipPath: {
+          triangleRight: "polygon(0 0, 0 100%, 100% 50%)",
+        },
       },
     },
   },

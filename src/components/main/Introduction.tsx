@@ -11,7 +11,7 @@ export default function Introduction() {
           src={parkbom_logo}
           alt="Parkbom"
           height={100}
-          className=" dark: brightness-200"
+          className=" dark:brightness-200"
         ></Image>
         <p className=" pl-6 text-parkbomDarkText dark:text-parkbomLightText">
           학문의 시작부터 끝까지, <br />

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* border: orange solid 1px; */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +16,4 @@ body {
 body {
   overflow-x: hidden;
 }
+

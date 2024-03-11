@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ToggleDarkMode from "./ToggleDarkMode";
+import ToggleDarkMode from "../helpers/ToggleDarkMode";
 
 export default function Header() {
   const pages: [string, string][] = [
