@@ -1,4 +1,4 @@
-export default function Location() {
+export default function Classes() {
   return (
     <div>
       <main className="">
