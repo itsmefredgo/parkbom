@@ -18,8 +18,8 @@ export default function Header() {
   return (
     <header
       className=" flex justify-around items-center shadow-lg text-xl fixed w-screen h-20 z-10
-      bg-parkbom05 text-parkbom18 bg-opacity-60 font-semibold 
-      dark:bg-parkbom18 dark:text-parkbom05 dark:bg-opacity-60"
+      bg-parkbomLightBg02 text-parkbomDarkText bg-opacity-60 font-semibold 
+      dark:bg-parkbomDarkBg02 dark:text-parkbomLightText dark:bg-opacity-60"
     >
       <div className=" flex">
         <Link href={"/"}>박봄 수학 영어</Link>

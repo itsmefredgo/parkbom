@@ -13,7 +13,7 @@ export default function Introduction() {
           height={100}
           className=" dark: brightness-200"
         ></Image>
-        <p className=" pl-6 text-parkbom19 dark:text-parkbom00">
+        <p className=" pl-6 text-parkbomDarkText dark:text-parkbomLightText">
           학문의 시작부터 끝까지, <br />
           수학과 영어의 핵심을 강화하는 특별한 학습 경험을 만나보세요. <br />
           초, 중, 고 학년 모두에게 적합한 최고의 교육을 제공합니다.

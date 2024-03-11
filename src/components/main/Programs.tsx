@@ -28,10 +28,10 @@ export default function HomeMethods() {
     );
   };
   return (
-    <section className=" h-[55rem] px-[calc((100vw-60rem)/2)] bg-parkbom01 pt-28 dark:bg-parkbom17">
+    <section className=" h-[55rem] px-[calc((100vw-60rem)/2)] bg-parkbomLightBg02 pt-28 dark:bg-[#0d1117]">
       <div
-        className=" border-b-2 border-b-parkbom19 dark:border-b-parkbom01
-      text-parkbom19 dark:text-parkbom01 flex justify-between pb-1"
+        className=" border-b-2 border-b-parkbomDarkBg04 dark:border-b-parkbomDarkBg00
+      text-parkbomDarkBg04 dark:text-parkbomDarkBg00 flex justify-between pb-1"
       >
         <div className=" text-xl">
           <h1>About Us</h1>
@@ -40,10 +40,10 @@ export default function HomeMethods() {
           <button className=" mb-0 mt-auto">자세히보기</button>
         </div>
       </div>
-      <div className=" flex flex-row mt-4 text-parkbom19 dark:text-parkbom01">
-        <div className=" flex-[1] flex flex-col bg-parkbom06 rounded-lg dark:bg-parkbom13">
+      <div className=" flex flex-row mt-4 text-parkbomDarkText dark:text-parkbomLightText">
+        <div className=" flex-[1] flex flex-col bg-parkbomLightBg00 rounded-lg dark:bg-[#21262d]">
           <div
-            className=" h-[5rem] border-l border-r border-black rounded-2xl 
+            className=" h-[5rem] border-l border-r border-black dark:border-parkbomLightText rounded-2xl 
           m-[2rem] mt-[4rem] flex justify-center items-center"
           >
             <div className=" text-2xl">{selectedItem.programAttribute}</div>
@@ -56,10 +56,10 @@ export default function HomeMethods() {
           {programItems.map(({ programAttribute, description }, index) => (
             <div
               key={index}
-              className={` bg-parkbom06 dark:bg-parkbom13 h-[10rem] flex items-center 
+              className={` bg-parkbomLightBg00 dark:bg-[#21262d] h-[10rem] flex items-center 
               justify-center my-0 ml-0 mr-0 rounded-2xl text-[1.5rem] hover:text-[2rem] ${
                 selectedItem?.programAttribute === programAttribute
-                  ? " border-2 border-parkbom15 dark:border-parkbom02"
+                  ? " border-2 border-parkbomDarkBg00 dark:border-parkbom02"
                   : ""
               }`}
               onClick={() => handleItemSelected(programAttribute, description)}
