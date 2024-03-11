@@ -1,9 +1,7 @@
 export default function Classes() {
   return (
-    <div>
-      <main className="">
-        <div>This is classes information</div>
-      </main>
+    <div className=" bg-blue-500 h-screen w-screen">
+      <div>This is classes information</div>
     </div>
   );
 }

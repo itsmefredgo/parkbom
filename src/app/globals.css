@@ -5,26 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-* {
-  /* border: red solid 2px; */
-}
-
-/* header,
-main *,
-footer {
-  @apply transition-all duration-[20];
-} */
-
-/* * {
-  @apply transition-all duration-200;
-} */
-
-/* .all {
-  transition: all 30ms ease-in-out;
-} */
 
 /* To remove x-axis scroll bar caused from horizontal scroll bar space */
 body {

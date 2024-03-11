@@ -1,9 +1,7 @@
-export default function Location() {
+export default function AboutUs() {
   return (
-    <div>
-      <main className="">
-        <div>This is about uus information</div>
-      </main>
+    <div className=" bg-green-500 h-screen w-screen">
+      <div>This is about uus information</div>
     </div>
   );
 }

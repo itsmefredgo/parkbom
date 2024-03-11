@@ -1,11 +1,5 @@
-"use client";
-
 import Link from "next/link";
-import { IoMoon } from "react-icons/io5";
-import { IoMdSunny } from "react-icons/io";
-
-import { useDispatch } from "react-redux";
-import { toggleDarkMode } from "@/Redux/Features/darkModeSlice";
+import ToggleDarkMode from "./ToggleDarkMode";
 
 export default function Header() {
   const pages: [string, string][] = [
@@ -13,7 +7,6 @@ export default function Header() {
     ["수업", "/classes"],
     ["문의 및 위치", "/inquiries"],
   ];
-  const dispatch = useDispatch();
 
   return (
     <header
@@ -25,20 +18,14 @@ export default function Header() {
       <div className=" flex">
         <Link href={"/"}>박봄 수학 영어</Link>
         <div className="ml-12">|</div>
-        {/* Header Navigation Links Generation */}
         {pages.map(([pageName, route], index) => (
           <Link key={index} href={route} className=" ml-12">
             {pageName}
           </Link>
         ))}
       </div>
-      {/* Functions in Nav Bar */}
       <div className="">
-        {/* Funtion toggling Language change */}
-        <button onClick={() => dispatch(toggleDarkMode())}>
-          <IoMoon className="block dark:hidden" />
-          <IoMdSunny className="hidden dark:block" />
-        </button>
+        <ToggleDarkMode></ToggleDarkMode>
       </div>
     </header>
   );

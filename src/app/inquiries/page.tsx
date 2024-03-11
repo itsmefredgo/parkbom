@@ -1,9 +1,7 @@
-export default function Location() {
+export default function Inquiries() {
   return (
-    <div>
-      <main className="">
-        <div>This is inquiries information</div>
-      </main>
+    <div className=" bg-red-500 h-screen w-screen">
+      <div>This is inquiries information</div>
     </div>
   );
 }
