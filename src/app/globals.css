@@ -1,6 +1,9 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 * {
   /* border: orange solid 1px; */
@@ -15,4 +18,22 @@ body {
 /* To remove x-axis scroll bar caused from horizontal scroll bar space */
 body {
   overflow-x: hidden;
+}
+
+@keyframes extendHeaderAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes foldHeaderAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
