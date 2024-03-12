@@ -1,4 +1,5 @@
 import programItems, { ProgramItem } from "../data/programs";
+import { CiImageOn } from "react-icons/ci";
 
 function checkEven(number: number): boolean {
   if (number % 2 === 0) {
@@ -10,7 +11,7 @@ function checkEven(number: number): boolean {
 
 function ClassMethods() {
   return (
-    <div>
+    <div className="my-20">
       <h2 className=" text-[2rem] pb-2 pl-2 border-b-2 border-black border-solid">
         수업방식
       </h2>
@@ -18,17 +19,23 @@ function ClassMethods() {
         {programItems.map(({ programAttribute, description }, index) => (
           <div
             key={index}
-            className={` border-b-2 border-black border-solid p-4 ${
+            className={` border-b-2 border-black border-solid 
+            p-8 relative ${
               checkEven(index)
                 ? " tablet:border-r-2" // Even
                 : "" // Odd
             }`}
           >
-            <div className=" text-[1.25rem] mb-4">
-              <span className=" font-bold text-[2rem]">{index + 1}.</span>{" "}
-              {programAttribute}
+            <div className=" flex sm:h-[8rem]">
+              <div className=" text-[1.25rem]">
+                <span className=" font-bold text-[2rem]">{index + 1}.</span>{" "}
+                {programAttribute}
+              </div>
             </div>
-            <div>{description}</div>
+            <div className=" sm:absolute sm:top-8 mt-4 sm:mt-0 sm:w-[calc(100%-4rem)] flex justify-center">
+              <CiImageOn className=" h-[8rem] w-[8rem]"></CiImageOn>
+            </div>
+            <div className=" p-4">{description}</div>
           </div>
         ))}
         {/* <div className=" border-b-2 tablet:border-r-2 border-black border-solid p-4">
