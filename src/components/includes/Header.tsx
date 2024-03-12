@@ -54,8 +54,8 @@ export default function Header() {
         bg-[#c1d0c1] z-50 flex flex-col pt-16 pr-16 ${
           initialRun &&
           (navFolded
-            ? " animate-[foldHeaderAnimation_1s_ease_forwards]"
-            : " animate-[extendHeaderAnimation_1s_ease_forwards]")
+            ? " animate-[foldHeaderAnimation_0.5s_ease_forwards]"
+            : " animate-[extendHeaderAnimation_0.5s_ease_forwards]")
         }`}
       >
         {/* className=" fixed w-screen h-screen top-0  bg-red-500 z-50 hidden" */}
