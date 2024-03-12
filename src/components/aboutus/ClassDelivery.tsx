@@ -6,10 +6,10 @@ function ClassDelivery() {
   return (
     <div className=" mx-4  my-8">
       <h2 className=" text-[2rem] mb-4">수업진행</h2>
-      <div className=" flex flex-col">
+      <div className=" flex flex-col laptop:flex-row">
         <div
-          className=" bg-[#D37676] relative flex justify-around items-center h-[9rem] rounded-t-3xl
-          tablet:w-[calc((100%-9rem)/4)]"
+          className=" bg-[#D37676] relative flex justify-around items-center h-[9rem] rounded-t-3xl 
+          laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none laptop:h-[8rem]"
         >
           <div className=" h-fit w-[50%]">
             <h1 className=" text-[1.5rem]">1. 예습 (준비)</h1>
@@ -21,7 +21,7 @@ function ClassDelivery() {
           <CiImageOn className=" h-20 w-20" />
         </div>
 
-        <span className=" tablet:hidden">
+        <span className=" laptop:hidden">
           <TriangleBottomEdge
             topColour={"#D37676"}
             betweenColour={"#efefec"}
@@ -30,7 +30,7 @@ function ClassDelivery() {
             width={"100%"}
           ></TriangleBottomEdge>
         </span>
-        <span className=" hidden tablet:block">
+        <span className=" hidden laptop:block">
           <TriangleRightEdge
             triColour={"#D37676"}
             betweenColour={"#efefec"}
@@ -42,7 +42,7 @@ function ClassDelivery() {
 
         <div
           className=" bg-[#F1EF99] relative flex justify-around items-center h-[8rem]
-          tablet:w-[calc((100%-9rem)/4)]"
+          laptop:w-[calc((100%-9rem)/4)]"
         >
           <CiImageOn className=" h-20 w-20" />
           <div className=" h-fit w-[50%]">
@@ -54,7 +54,7 @@ function ClassDelivery() {
           </div>
         </div>
 
-        <span className=" hidden tablet:block">
+        <span className=" hidden laptop:block">
           <TriangleRightEdge
             triColour={"#F1EF99"}
             betweenColour={"#efefec"}
@@ -63,7 +63,7 @@ function ClassDelivery() {
             width={"3rem"}
           ></TriangleRightEdge>
         </span>
-        <span className=" tablet:hidden">
+        <span className=" laptop:hidden">
           <TriangleBottomEdge
             topColour={"#F1EF99"}
             betweenColour={"#efefec"}
@@ -75,7 +75,7 @@ function ClassDelivery() {
 
         <div
           className=" bg-[#D37676] relative flex justify-around items-center h-[8rem]
-          tablet:w-[calc((100%-9rem)/4)]"
+          laptop:w-[calc((100%-9rem)/4)]"
         >
           <div className=" h-fit w-[50%]">
             <h1 className=" text-[1.5rem]">3. 복습 및 정리</h1>
@@ -87,7 +87,7 @@ function ClassDelivery() {
           <CiImageOn className=" h-20 w-20" />
         </div>
 
-        <span className=" hidden tablet:block">
+        <span className=" hidden laptop:block">
           <TriangleRightEdge
             triColour={"#D37676"}
             betweenColour={"#efefec"}
@@ -96,7 +96,7 @@ function ClassDelivery() {
             width={"3rem"}
           ></TriangleRightEdge>
         </span>
-        <span className=" tablet:hidden">
+        <span className=" laptop:hidden">
           <TriangleBottomEdge
             topColour={"#D37676"}
             betweenColour={"#efefec"}
@@ -108,7 +108,7 @@ function ClassDelivery() {
 
         <div
           className=" bg-[#F1EF99] relative flex justify-around items-center h-[9rem] rounded-b-3xl
-          tablet:w-[calc((100%-9rem)/4)]"
+          laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none laptop:h-[8rem]"
         >
           <CiImageOn className=" h-20 w-20" />
           <div className=" h-fit w-[50%]">
