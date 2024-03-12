@@ -8,11 +8,11 @@ type propsType = {
 
 function TriangleRightEdge(props: propsType) {
   return (
-    <svg width={props.width} height={props.height} viewBox="0 0 30 80">
+    <svg width={props.width} height={props.height} viewBox="0 0 30 180">
       <rect width={props.width} height={props.height} fill={props.rectColour} />
-      <polygon points="0,0 25,40 0,80" fill={props.triColour} />
+      <polygon points="0,0 25,90 0,180" fill={props.triColour} />
       <polygon
-        points="0,0 5,0 30,40 5,80 0,80 25,40"
+        points="0,0 5,0 30,90 5,180 0,180 25,90"
         fill={props.betweenColour}
       />
     </svg>

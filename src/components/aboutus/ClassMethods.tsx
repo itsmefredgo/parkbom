@@ -11,7 +11,7 @@ function checkEven(number: number): boolean {
 
 function ClassMethods() {
   return (
-    <div className="my-20">
+    <div className="my-20 px-[5vw]  laptop:max-w-[80rem] laptop:mx-auto">
       <h2 className=" text-[2rem] pb-2 pl-2 border-b-2 border-black border-solid">
         수업방식
       </h2>
@@ -26,13 +26,17 @@ function ClassMethods() {
                 : "" // Odd
             }`}
           >
-            <div className=" flex sm:h-[8rem]">
+            <div className=" flex sm:h-[8rem] tablet:h-auto">
               <div className=" text-[1.25rem]">
                 <span className=" font-bold text-[2rem]">{index + 1}.</span>{" "}
                 {programAttribute}
               </div>
             </div>
-            <div className=" sm:absolute sm:top-8 mt-4 sm:mt-0 sm:w-[calc(100%-4rem)] flex justify-center">
+            <div
+              className=" mt-4 flex justify-center
+              sm:mt-0 sm:w-[calc(100%-4rem)] sm:absolute sm:top-8
+              tablet:relative tablet:top-0 tablet:w-auto tablet:mt-2"
+            >
               <CiImageOn className=" h-[8rem] w-[8rem]"></CiImageOn>
             </div>
             <div className=" p-4">{description}</div>
