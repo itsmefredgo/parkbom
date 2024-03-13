@@ -7,6 +7,7 @@ import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 import { useEffect } from "react";
 
@@ -19,12 +20,19 @@ export default function Header() {
 
   const [initialRun, setInitialRun] = useState(true);
   const [navFolded, setNavFolded] = useState(true);
-  const [currentPage, setCurrentPage] = useState("/");
+  const [currentPage, setCurrentPage] = useState(usePathname());
 
-  function extendNavBar() {
+  // setCurrentPage(usePathname());
+
+  const extendNavBar = () => {
     setNavFolded(!navFolded);
     setInitialRun(false);
-  }
+  };
+
+  const mobileOnClick = (route: string) => {
+    extendNavBar();
+    setCurrentPage(route);
+  };
 
   return (
     <header
@@ -32,7 +40,7 @@ export default function Header() {
       tablet:flex tablet:flex-row  tablet:justify-around
       text-[#2D2D2D] dark:text-[#F5F5F5]
       bg-[#F5F5F5] dark:bg-[#676767]
-        bg-opacity-60 dark:bg-opacity-80"
+        bg-opacity-60 dark:bg-opacity-80 duration-300"
     >
       <div className=" flex-row justify-between h-full items-center pl-8 pr-12 flex">
         <Link href={"/"} onClick={() => setCurrentPage("/")}>
@@ -87,7 +95,7 @@ export default function Header() {
           <FaTimes className="h-full w-full" />
         </button>
         <Link
-          onClick={extendNavBar}
+          onClick={() => mobileOnClick("/")}
           href={"/"}
           className=" ml-auto mt-4 mr-[-0.5rem]"
         >
@@ -100,8 +108,8 @@ export default function Header() {
         {pages.map(([pageName, route], index) => (
           <Link
             key={index}
+            onClick={() => mobileOnClick(route)}
             href={route}
-            onClick={extendNavBar}
             className=" mr-0 ml-auto mt-4"
           >
             {pageName}

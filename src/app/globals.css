@@ -9,6 +9,17 @@
   /* border: orange solid 1px; */
 }
 
+/* global.css or _app.css */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Applying automatically in dark mode */
+@layer base {
+  body.dark {
+    @apply transition-all;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -18,6 +29,10 @@ body {
 /* To remove x-axis scroll bar caused from horizontal scroll bar space */
 body {
   overflow-x: hidden;
+}
+
+.dark-transition {
+  transition: all 0.3s ease-in-out; /* Adjust duration and timing function as needed */
 }
 
 @keyframes extendHeaderAnimation {

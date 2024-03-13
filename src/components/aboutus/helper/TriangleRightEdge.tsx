@@ -9,7 +9,7 @@ function TriangleRightEdge() {
       <rect
         width={"3rem"}
         height={"18rem"}
-        className={` fill-[#BFD6D1] dark:fill-[#3f4b48]`}
+        className={` fill-[#BFD6D1] dark:fill-[#5b6d68]`}
       />
       <polygon
         points="0,0 5,0 30,90 5,180 0,180 25,90"
@@ -17,7 +17,7 @@ function TriangleRightEdge() {
       />
       <polygon
         points="0,0 25,90 0,180"
-        className={` fill-[#BFD6D1] dark:fill-[#3f4b48]`}
+        className={` fill-[#BFD6D1] dark:fill-[#5b6d68]`}
       />
     </svg>
   );

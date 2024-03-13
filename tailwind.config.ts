@@ -36,6 +36,9 @@ const config: Config = {
           triangleRight: "polygon(0 0, 0 100%, 100% 50%)",
         },
       },
+      animation: {
+        "dark-mode": "dark-mode 0.3s ease-in-out",
+      },
     },
   },
   plugins: [],

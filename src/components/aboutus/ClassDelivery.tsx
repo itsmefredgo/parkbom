@@ -6,14 +6,11 @@ import ClassProgressStep from "./helper/ClassProgressStep";
 // Data Imports
 import classProgressSteps from "../data/classProgressSteps";
 
-// Icons
-import { CiImageOn } from "react-icons/ci";
-
 function ClassDelivery() {
   return (
     <div
       className=" px-[calc(5vw+2rem)] pt-8 pb-16 
-              bg-[#d9ddd1] dark:bg-[#1c1c1c]"
+                bg-[#d9ddd1] dark:bg-[#1c1c1c]"
     >
       <div className=" laptop:max-w-[70rem] laptop:mx-auto">
         <h2 className=" text-[2rem] pb-4">수업진행</h2>
@@ -23,7 +20,7 @@ function ClassDelivery() {
             <>
               <div
                 className={` relative flex justify-around items-center h-[9rem] 
-                      bg-[#BFD6D1] dark:bg-[#3f4b48] laptop:rounded-none 
+                      bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none 
                       laptop:w-[calc((100%-9rem)/4)] laptop:h-[18rem] 
                       laptop:flex-col laptop:justify-center laptop:gap-4
                     ${

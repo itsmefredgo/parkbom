@@ -5,16 +5,16 @@ function TriangleBottomEdge() {
       height={"3rem"}
       viewBox="0 0 20 3"
       preserveAspectRatio="none"
-      className=" laptop:hidden"
+      className=" laptop:hidden duration-[10s]"
     >
       <rect
         width={"100%"}
         height={"3rem"}
-        className={` fill-[#BFD6D1] dark:fill-[#3f4b48]`}
+        className={` fill-[#BFD6D1] dark:fill-[#5b6d68]`}
       />
       <polygon
         points="0,0 20,0 10,2"
-        className={` fill-[#BFD6D1] dark:fill-[#3f4b48]`}
+        className={` fill-[#BFD6D1] dark:fill-[#5b6d68]`}
       />
       <polygon
         points="0,0 10,2 20,0 20,1 10,3 0,1"
