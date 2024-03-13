@@ -5,15 +5,20 @@ import ClassGallary from "@/components/aboutus/ClassGallary";
 
 export default function AboutUs() {
   return (
+    // <div
+    //   className=" pt-[6rem] pb-[3rem]
+    // bg-[#efefec] dark:bg-[#203C31]
+    // text-[#000000] dark:text-[#FDFFF0]"
+    // >
     <div
       className=" pt-[6rem] pb-[3rem]
-    bg-[#efefec] dark:bg-[#203C31] 
-    text-[#000000] dark:text-[#FDFFF0]"
+    bg-[#efefec] dark:bg-[#2D2D2D] 
+    text-[#000000] dark:text-[#F5F5F5]"
     >
       {/* Page Title */}
       <div
         className="text-[3rem] mb-8 font-bold px-[5vw] 
-        laptop:max-w-[80rem] laptop:mx-auto text-[#045329] dark:text-[#efeba6]"
+        laptop:max-w-[80rem] laptop:mx-auto text-[#045329] dark:text-[#BFD6D1]"
       >
         <h1>ABOUT US</h1>
       </div>
@@ -25,7 +30,7 @@ export default function AboutUs() {
       <ClassMethods></ClassMethods>
 
       {/* Top Divider of Class Progress Steps Section */}
-      <div
+      {/* <div
         className=" bottom-0 left-0 w-[100%] overflow-hidden 
                   rotate-180 leading-[0]"
       >
@@ -41,11 +46,11 @@ export default function AboutUs() {
             className=" fill-[#d9ddd1] dark:fill-[#366247]"
           ></path>
         </svg>
-      </div>
+      </div> */}
       {/* Class Progress Steps Section */}
       <ClassDelivery></ClassDelivery>
       {/* Bottom Divider of Class Progress Steps Section */}
-      <div
+      {/* <div
         className=" bottom-0 left-0 w-[100%] overflow-hidden 
                   rotate-180 leading-[0] bg-[#d9ddd1] dark:bg-[#366247]"
       >
@@ -61,7 +66,7 @@ export default function AboutUs() {
             className=" fill-[#efefec] dark:fill-[#203C31]"
           ></path>
         </svg>
-      </div>
+      </div> */}
 
       {/* Class Gallary Section */}
       <ClassGallary></ClassGallary>
