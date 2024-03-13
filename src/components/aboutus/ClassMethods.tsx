@@ -12,7 +12,7 @@ function checkEven(number: number): boolean {
 function ClassMethods() {
   return (
     <div className="my-20 px-[5vw]  laptop:max-w-[80rem] laptop:mx-auto">
-      <h2 className=" text-[2rem] pb-2 pl-2 border-b-2 border-black border-solid">
+      <h2 className=" text-[2rem] pb-2 pl-2 border-b-2 border-black dark:border-[#efeba6] border-solid">
         수업방식
       </h2>
       <div className=" grid grid-cols-1 tablet:grid-cols-2">
@@ -20,6 +20,7 @@ function ClassMethods() {
           <div
             key={index}
             className={` border-b-2 border-black border-solid 
+            dark:border-[#efeba6]
             p-8 relative ${
               checkEven(index)
                 ? " tablet:border-r-2" // Even

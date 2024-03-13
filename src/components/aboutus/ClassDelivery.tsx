@@ -1,19 +1,30 @@
+// Dividers in Class Progress Steps Section
 import TriangleRightEdge from "@/components/helpers/TriangleRightEdge";
 import TriangleBottomEdge from "@/components/helpers/TriangleBottomEdge";
+
+// Icons
 import { CiImageOn } from "react-icons/ci";
 
 function ClassDelivery() {
   return (
-    <div className=" px-[calc(5vw+2rem)] pt-8 pb-16 bg-[#d9ddd1]">
+    <div
+      className=" px-[calc(5vw+2rem)] pt-8 pb-16 
+              bg-[#d9ddd1] dark:bg-[#366247]"
+    >
       <div className=" laptop:max-w-[70rem] laptop:mx-auto">
         <h2 className=" text-[2rem] pb-4">수업진행</h2>
+
+        {/* Beginning of the Class Progress Section */}
+
         <div className=" flex flex-col laptop:flex-row">
+          {/* Class Progress Step #1 */}
           <div
             className=" relative flex justify-around items-center
-          bg-[#D37676] h-[9rem] rounded-t-3xl
-          laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none 
-          laptop:rounded-l-3xl laptop:h-[18rem] laptop:flex-col 
-          laptop:justify-center laptop: gap-4"
+                      h-[9rem] rounded-t-3xl
+                      bg-[#92C3A4] dark:bg-[#6E5221]
+                      laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none 
+                      laptop:rounded-l-3xl laptop:h-[18rem] laptop:flex-col 
+                      laptop:justify-center laptop: gap-4"
           >
             <div className=" h-fit w-[50%] laptop:w-[80%]">
               <h1 className=" text-[1.5rem]">1. 예습 (준비)</h1>
@@ -25,28 +36,36 @@ function ClassDelivery() {
             <CiImageOn className=" h-20 w-20" />
           </div>
 
+          {/* Divider Between Step #1 and #2 */}
           <span className=" laptop:hidden">
             <TriangleBottomEdge
-              topColour={"#D37676"}
-              betweenColour={"#d9ddd1"}
-              botColour={"#F1EF99"}
+              topColour="#92C3A4"
+              darkTopColour="#6E5221"
+              betweenColour="#d9ddd1"
+              darkBetweenColour="#366247"
+              botColour="#D8D797"
+              darkBotColour="#8D2A78"
               height={"3rem"}
               width={"100%"}
             ></TriangleBottomEdge>
           </span>
           <span className=" hidden laptop:block">
             <TriangleRightEdge
-              triColour={"#D37676"}
+              triColour={"#92C3A4"}
+              darkTriColour={"#6e5221"}
               betweenColour={"#d9ddd1"}
-              rectColour={"#F1EF99"}
+              darkBetweenColour={"#366247"}
+              rectColour={"#d8d797"}
+              darkRectColour={"#8D2A78"}
               height={"18rem"}
               width={"3rem"}
             ></TriangleRightEdge>
           </span>
 
+          {/* Class Progress Step #2 */}
           <div
             className=" relative flex justify-around items-center
-          bg-[#F1EF99] h-[9rem] 
+          bg-[#D8D797] dark:bg-[#8D2A78] h-[9rem] 
           laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none 
           laptop:h-[18rem] laptop:flex-col 
           laptop:justify-center laptop: gap-4"
@@ -61,28 +80,36 @@ function ClassDelivery() {
             </div>
           </div>
 
-          <span className=" hidden laptop:block">
-            <TriangleRightEdge
-              triColour={"#F1EF99"}
-              betweenColour={"#d9ddd1"}
-              rectColour={"#D37676"}
-              height={"18rem"}
-              width={"3rem"}
-            ></TriangleRightEdge>
-          </span>
+          {/* Divider Between Step #2 and #3 */}
           <span className=" laptop:hidden">
             <TriangleBottomEdge
-              topColour={"#F1EF99"}
-              betweenColour={"#d9ddd1"}
-              botColour={"#D37676"}
+              botColour="#92C3A4"
+              darkBotColour="#6E5221"
+              betweenColour="#d9ddd1"
+              darkBetweenColour="#366247"
+              topColour="#D8D797"
+              darkTopColour="#8D2A78"
               height={"3rem"}
               width={"100%"}
             ></TriangleBottomEdge>
           </span>
+          <span className=" hidden laptop:block">
+            <TriangleRightEdge
+              triColour={"#d8d797"}
+              darkTriColour={"#8D2A78"}
+              betweenColour={"#d9ddd1"}
+              darkBetweenColour={"#366247"}
+              rectColour={"#92C3A4"}
+              darkRectColour={"#6e5221"}
+              height={"18rem"}
+              width={"3rem"}
+            ></TriangleRightEdge>
+          </span>
 
+          {/* Class Progress Step #3 */}
           <div
             className=" relative flex justify-around items-center
-          bg-[#D37676] h-[9rem]
+          bg-[#92C3A4] dark:bg-[#6E5221] h-[9rem]
           laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none 
           laptop:h-[18rem] laptop:flex-col 
           laptop:justify-center laptop: gap-4"
@@ -97,28 +124,36 @@ function ClassDelivery() {
             <CiImageOn className=" h-20 w-20" />
           </div>
 
-          <span className=" hidden laptop:block">
-            <TriangleRightEdge
-              triColour={"#D37676"}
-              betweenColour={"#d9ddd1"}
-              rectColour={"#F1EF99"}
-              height={"18rem"}
-              width={"3rem"}
-            ></TriangleRightEdge>
-          </span>
+          {/* Divider Between Step #3 and #4 */}
           <span className=" laptop:hidden">
             <TriangleBottomEdge
-              topColour={"#D37676"}
-              betweenColour={"#d9ddd1"}
-              botColour={"#F1EF99"}
+              topColour="#92C3A4"
+              darkTopColour="#6E5221"
+              betweenColour="#d9ddd1"
+              darkBetweenColour="#366247"
+              botColour="#D8D797"
+              darkBotColour="#8D2A78"
               height={"3rem"}
               width={"100%"}
             ></TriangleBottomEdge>
           </span>
+          <span className=" hidden laptop:block">
+            <TriangleRightEdge
+              triColour={"#92C3A4"}
+              darkTriColour={"#6e5221"}
+              betweenColour={"#d9ddd1"}
+              darkBetweenColour={"#366247"}
+              rectColour={"#d8d797"}
+              darkRectColour={"#8D2A78"}
+              height={"18rem"}
+              width={"3rem"}
+            ></TriangleRightEdge>
+          </span>
 
+          {/* Class Progress Step #4 */}
           <div
             className=" relative flex justify-around items-center
-          bg-[#F1EF99] h-[9rem] rounded-b-3xl
+          bg-[#D8D797] dark:bg-[#8D2A78] h-[9rem] rounded-b-3xl
           laptop:w-[calc((100%-9rem)/4)] laptop:rounded-none 
           laptop:rounded-r-3xl laptop:h-[18rem] laptop:flex-col 
           laptop:justify-center laptop: gap-4"
@@ -132,6 +167,8 @@ function ClassDelivery() {
               </p>
             </div>
           </div>
+
+          {/* End of the Class Progress Section */}
         </div>
       </div>
     </div>

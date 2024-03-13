@@ -1,7 +1,10 @@
 type propsType = {
   topColour: string;
+  darkTopColour: string;
   betweenColour: string;
+  darkBetweenColour: string;
   botColour: string;
+  darkBotColour: string;
   height: string;
   width: string;
 };
@@ -18,12 +21,15 @@ function TriangleBottomEdge(props: propsType) {
         <rect
           width={props.width}
           height={props.height}
-          fill={props.botColour}
+          className={` fill-[${props.botColour}] dark:fill-[${props.darkBotColour}]`}
         />
-        <polygon points="0,0 20,0 10,2" fill={props.topColour} />
+        <polygon
+          points="0,0 20,0 10,2"
+          className={` fill-[${props.topColour}] dark:fill-[${props.darkTopColour}]`}
+        />
         <polygon
           points="0,0 10,2 20,0 20,1 10,3 0,1"
-          fill={props.betweenColour}
+          className={` fill-[${props.betweenColour}] dark:fill-[${props.darkBetweenColour}]`}
         />
       </svg>
     </div>
