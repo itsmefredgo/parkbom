@@ -1,6 +1,9 @@
 export default function Inquiries() {
   return (
-    <div className=" bg-red-500 h-screen w-screen">
+    <div
+      className=" bg-[#efefec] dark:bg-[#203C31] 
+    text-[#000000] dark:text-[#FDFFF0] h-screen w-screen"
+    >
       <div>This is inquiries information</div>
     </div>
   );

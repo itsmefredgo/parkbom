@@ -19,6 +19,7 @@ export default function Header() {
 
   const [initialRun, setInitialRun] = useState(true);
   const [navFolded, setNavFolded] = useState(true);
+  const [currentPage, setCurrentPage] = useState("/");
 
   function extendNavBar() {
     setNavFolded(!navFolded);
@@ -29,16 +30,16 @@ export default function Header() {
     <header
       className=" shadow-lg text-xl fixed top-0 w-screen h-20 z-10 font-semibold 
       tablet:flex tablet:flex-row  tablet:justify-around
-      text-parkbomDarkText dark:text-parkbomLightText
-      bg-parkbomLightBg02 dark:bg-parkbomDarkBg02
-        bg-opacity-60 dark:bg-opacity-60"
+      text-[#2D2D2D] dark:text-[#F5F5F5]
+      bg-[#F5F5F5] dark:bg-[#676767]
+        bg-opacity-60 dark:bg-opacity-80"
     >
       <div className=" flex-row justify-between h-full items-center pl-8 pr-12 flex">
-        <Link href={"/"} className=" ">
+        <Link href={"/"} onClick={() => setCurrentPage("/")}>
           <Image
             src={parkbom_logo}
             alt="Parkbom"
-            className=" dark:brightness-200 h-[4rem] w-[auto]"
+            className=" brightness-[0%] invert-[0] dark:invert-[1] h-[4rem] w-[auto]"
           ></Image>
         </Link>
         <button onClick={extendNavBar} className=" tablet:hidden">
@@ -46,13 +47,27 @@ export default function Header() {
         </button>
         <div className="ml-12 hidden tablet:block">|</div>
         {pages.map(([pageName, route], index) => (
-          <Link key={index} href={route} className=" ml-12 hidden tablet:block">
+          <Link
+            key={index}
+            href={route}
+            className={`ml-12 hidden tablet:block border-b-[2.5px] ${
+              route === currentPage
+                ? "border-[#3F6E37] dark:border-[#5ea651]"
+                : "border-[#00000000]"
+            }`}
+            onClick={() => setCurrentPage(route)}
+          >
             {pageName}
           </Link>
         ))}
       </div>
 
-      <div className=" tablet:flex items-center hidden">
+      <div
+        className=" tablet:flex tablet:justify-center 
+                  items-center hidden bg-[#3F6E37] dark:bg-[#5ea651] 
+                  my-[1.25rem] w-[2.5rem] rounded-2xl text-[#F5F5F5]
+                  dark:text-[#F5F5F5]"
+      >
         <ToggleDarkMode></ToggleDarkMode>
       </div>
 
