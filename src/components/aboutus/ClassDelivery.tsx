@@ -37,7 +37,7 @@ function ClassDelivery() {
           </div>
 
           {/* Divider Between Step #1 and #2 */}
-          <span className=" laptop:hidden">
+          {/* <span className=" laptop:hidden">
             <TriangleBottomEdge
               topColour="#92C3A4"
               darkTopColour="#6E5221"
@@ -48,8 +48,32 @@ function ClassDelivery() {
               height={"3rem"}
               width={"100%"}
             ></TriangleBottomEdge>
+          </span> */}
+          <span className=" laptop:hidden">
+            <div>
+              <svg
+                width="100%"
+                height="3rem"
+                viewBox="0 0 20 3"
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="3rem"
+                  className=" fill-[#D8D797] dark:fill-[#8D2A78]"
+                ></rect>
+                <polygon
+                  points="0,0 20,0 10,2"
+                  className=" fill-[#92C3A4] dark:fill-[#6E5221]"
+                ></polygon>
+                <polygon
+                  points="0,0 10,2 20,0 20,1 10,3 0,1"
+                  className=" fill-[#d9ddd1] dark:fill-[#366247]"
+                ></polygon>
+              </svg>
+            </div>
           </span>
-          <span className=" hidden laptop:block">
+          {/* <span className=" hidden laptop:block">
             <TriangleRightEdge
               triColour={"#92C3A4"}
               darkTriColour={"#6e5221"}
@@ -60,6 +84,23 @@ function ClassDelivery() {
               height={"18rem"}
               width={"3rem"}
             ></TriangleRightEdge>
+          </span> */}
+          <span className=" hidden laptop:block">
+            <svg width="3rem" height="18rem" viewBox="0 0 30 180">
+              <rect
+                width="3rem"
+                height="18rem"
+                className=" fill-[#d8d797] dark:fill-[#8D2A78]"
+              ></rect>
+              <polygon
+                points="0,0 5,0 30,90 5,180 0,180 25,90"
+                className=" fill-[#d9ddd1] dark:fill-[#366247]"
+              ></polygon>
+              <polygon
+                points="0,0 25,90 0,180"
+                className=" fill-[#92C3A4] dark:fill-[#6e5221]"
+              ></polygon>
+            </svg>
           </span>
 
           {/* Class Progress Step #2 */}
@@ -81,7 +122,7 @@ function ClassDelivery() {
           </div>
 
           {/* Divider Between Step #2 and #3 */}
-          <span className=" laptop:hidden">
+          {/* <span className=" laptop:hidden">
             <TriangleBottomEdge
               botColour="#92C3A4"
               darkBotColour="#6E5221"
@@ -92,8 +133,32 @@ function ClassDelivery() {
               height={"3rem"}
               width={"100%"}
             ></TriangleBottomEdge>
+          </span> */}
+          <span className=" laptop:hidden">
+            <div>
+              <svg
+                width="100%"
+                height="3rem"
+                viewBox="0 0 20 3"
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="3rem"
+                  className=" fill-[#92C3A4] dark:fill-[#6E5221]"
+                ></rect>
+                <polygon
+                  points="0,0 20,0 10,2"
+                  className=" fill-[#D8D797] dark:fill-[#8D2A78]"
+                ></polygon>
+                <polygon
+                  points="0,0 10,2 20,0 20,1 10,3 0,1"
+                  className=" fill-[#d9ddd1] dark:fill-[#366247]"
+                ></polygon>
+              </svg>
+            </div>
           </span>
-          <span className=" hidden laptop:block">
+          {/* <span className=" hidden laptop:block">
             <TriangleRightEdge
               triColour={"#d8d797"}
               darkTriColour={"#8D2A78"}
@@ -104,6 +169,23 @@ function ClassDelivery() {
               height={"18rem"}
               width={"3rem"}
             ></TriangleRightEdge>
+          </span> */}
+          <span className=" hidden laptop:block">
+            <svg width="3rem" height="18rem" viewBox="0 0 30 180">
+              <rect
+                width="3rem"
+                height="18rem"
+                className=" fill-[#92C3A4] dark:fill-[#6e5221]"
+                ></rect>
+              <polygon
+                points="0,0 5,0 30,90 5,180 0,180 25,90"
+                className=" fill-[#d9ddd1] dark:fill-[#366247]"
+                ></polygon>
+              <polygon
+                points="0,0 25,90 0,180"
+                className=" fill-[#d8d797] dark:fill-[#8D2A78]"
+              ></polygon>
+            </svg>
           </span>
 
           {/* Class Progress Step #3 */}
@@ -125,7 +207,7 @@ function ClassDelivery() {
           </div>
 
           {/* Divider Between Step #3 and #4 */}
-          <span className=" laptop:hidden">
+          {/* <span className=" laptop:hidden">
             <TriangleBottomEdge
               topColour="#92C3A4"
               darkTopColour="#6E5221"
@@ -136,8 +218,32 @@ function ClassDelivery() {
               height={"3rem"}
               width={"100%"}
             ></TriangleBottomEdge>
+          </span> */}
+          <span className=" laptop:hidden">
+            <div>
+              <svg
+                width="100%"
+                height="3rem"
+                viewBox="0 0 20 3"
+                preserveAspectRatio="none"
+              >
+                <rect
+                  width="100%"
+                  height="3rem"
+                  className=" fill-[#D8D797] dark:fill-[#8D2A78]"
+                ></rect>
+                <polygon
+                  points="0,0 20,0 10,2"
+                  className=" fill-[#92C3A4] dark:fill-[#6E5221]"
+                ></polygon>
+                <polygon
+                  points="0,0 10,2 20,0 20,1 10,3 0,1"
+                  className=" fill-[#d9ddd1] dark:fill-[#366247]"
+                ></polygon>
+              </svg>
+            </div>
           </span>
-          <span className=" hidden laptop:block">
+          {/* <span className=" hidden laptop:block">
             <TriangleRightEdge
               triColour={"#92C3A4"}
               darkTriColour={"#6e5221"}
@@ -148,6 +254,23 @@ function ClassDelivery() {
               height={"18rem"}
               width={"3rem"}
             ></TriangleRightEdge>
+          </span> */}
+          <span className=" hidden laptop:block">
+            <svg width="3rem" height="18rem" viewBox="0 0 30 180">
+              <rect
+                width="3rem"
+                height="18rem"
+                className=" fill-[#d8d797] dark:fill-[#8D2A78]"
+              ></rect>
+              <polygon
+                points="0,0 5,0 30,90 5,180 0,180 25,90"
+                className=" fill-[#d9ddd1] dark:fill-[#366247]"
+              ></polygon>
+              <polygon
+                points="0,0 25,90 0,180"
+                className=" fill-[#92C3A4] dark:fill-[#6e5221]"
+              ></polygon>
+            </svg>
           </span>
 
           {/* Class Progress Step #4 */}
