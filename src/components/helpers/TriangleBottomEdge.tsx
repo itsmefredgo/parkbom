@@ -29,6 +29,7 @@ function TriangleBottomEdge(props: propsType) {
       <polygon
         points="0,0 10,2 20,0 20,1 10,3 0,1"
         className={` fill-[${props.betweenColour}] dark:fill-[${props.darkBetweenColour}]`}
+        // fill={` fill-[${props.betweenColour}] dark:fill-[${props.darkBetweenColour}]`}
       />
     </svg>
   );
