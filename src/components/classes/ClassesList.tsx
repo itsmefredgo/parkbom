@@ -1,50 +1,80 @@
 "use client";
 
-import MathClassList from "./helper/MathClassList";
-import EnglishClassList from "./helper/EnglishClassList";
+import ClassesListDisplay from "./helper/ClassesListDisplay";
 
 import { useState } from "react";
 
 function ClassesList() {
-  const [selectedSubject, setSelectedSubject] = useState("math");
+  const [selectedSubject, setSelectedSubject] = useState("Math");
+  const subjectList: string[] = ["Math", "English"];
 
   return (
     <div className="max-w-[80rem] mx-auto">
       <div
-        className=" flex  justify-center w-[80%] mx-auto 
+        className=" flex  justify-center w-[80%] mx-auto rounded-2xl overflow-hidden h-16
                     divide-x-4 divide-[#dfe4ea] dark:divide-[#2D2D2D]"
       >
-        <button
-          className=" p-4 flex justify-center flex-1 rounded-l-2xl
-                    bg-[#a4c7cf] dark:bg-[#7db1bd] font-bold
+        {/* <div
+          className=" flex justify-center flex-1 h-14
+                    bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
                     hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
-          onClick={() => setSelectedSubject("math")}
         >
-          <div
-            className={` px-1 ${
-              selectedSubject === "math" && " border-b-4 border-[#2D2D2D]"
-            }`}
+          <button
+            className={` px-1 w-full h-full font-bold flex justify-center items-center`}
+            onClick={() => setSelectedSubject("math")}
           >
-            MATH
-          </div>
-        </button>
-        <button
-          className=" p-4 flex justify-center flex-1 rounded-r-2xl
-                    bg-[#a4c7cf] dark:bg-[#7db1bd] font-bold
+            <div
+              className={` w-fit h-fit ${
+                selectedSubject === "math" && " border-b-4 border-[#2D2D2D]"
+              }`}
+            >
+              MATH
+            </div>
+          </button>
+        </div>
+
+        <div
+          className=" flex justify-center flex-1 
+                    bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
                     hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
-          onClick={() => setSelectedSubject("english")}
         >
-          <div
-            className={` px-1 ${
-              selectedSubject === "english" && " border-b-4 border-[#2D2D2D]"
-            }`}
+          <button
+            className={` px-1 w-full h-full font-bold flex justify-center items-center`}
+            onClick={() => setSelectedSubject("english")}
           >
-            ENGLISH
+            <div
+              className={` w-fit h-fit ${
+                selectedSubject === "english" && " border-b-4 border-[#2D2D2D]"
+              }`}
+            >
+              English
+            </div>
+          </button>
+        </div> */}
+        {subjectList.map((subjectForButton, inedx) => (
+          <div
+            className=" flex justify-center flex-1 
+                    bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
+                    hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
+          >
+            <button
+              className={` px-1 w-full h-full font-bold flex justify-center items-center`}
+              onClick={() => setSelectedSubject(subjectForButton)}
+            >
+              <div
+                className={` w-fit h-fit ${
+                  selectedSubject === subjectForButton &&
+                  " border-b-4 border-[#2D2D2D]"
+                }`}
+              >
+                {subjectForButton}
+              </div>
+            </button>
           </div>
-        </button>
+        ))}
       </div>
       <div className=" w-[80%] mx-auto my-8 px-4">
-        {selectedSubject === "math" ? <MathClassList /> : <EnglishClassList />}
+        <ClassesListDisplay selectedSubject={selectedSubject} />
       </div>
     </div>
   );
