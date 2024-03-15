@@ -1,5 +1,7 @@
-import { mathClassList } from "@/components/data/mathClassesList";
-import { englishClassList } from "@/components/data/mathClassesList";
+import {
+  mathClassList,
+  englishClassList,
+} from "@/components/data/classesListData";
 
 type propsType = {
   selectedSubject: string;

@@ -14,45 +14,9 @@ function ClassesList() {
         className=" flex  justify-center w-[80%] mx-auto rounded-2xl overflow-hidden h-16
                     divide-x-4 divide-[#dfe4ea] dark:divide-[#2D2D2D]"
       >
-        {/* <div
-          className=" flex justify-center flex-1 h-14
-                    bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
-                    hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
-        >
-          <button
-            className={` px-1 w-full h-full font-bold flex justify-center items-center`}
-            onClick={() => setSelectedSubject("math")}
-          >
-            <div
-              className={` w-fit h-fit ${
-                selectedSubject === "math" && " border-b-4 border-[#2D2D2D]"
-              }`}
-            >
-              MATH
-            </div>
-          </button>
-        </div>
-
-        <div
-          className=" flex justify-center flex-1 
-                    bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
-                    hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
-        >
-          <button
-            className={` px-1 w-full h-full font-bold flex justify-center items-center`}
-            onClick={() => setSelectedSubject("english")}
-          >
-            <div
-              className={` w-fit h-fit ${
-                selectedSubject === "english" && " border-b-4 border-[#2D2D2D]"
-              }`}
-            >
-              English
-            </div>
-          </button>
-        </div> */}
-        {subjectList.map((subjectForButton, inedx) => (
+        {subjectList.map((subjectForButton, index) => (
           <div
+            key={index}
             className=" flex justify-center flex-1 
                     bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
                     hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"

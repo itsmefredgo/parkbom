@@ -48,6 +48,7 @@ export const mathClassList: ClassList[] = [
     ],
   },
 ];
+
 export const englishClassList: ClassList[] = [
   {
     classTitle: "영어 수업 프로그램",
@@ -85,7 +86,3 @@ export const englishClassList: ClassList[] = [
     ],
   },
 ];
-
-// export default englishClassList, mathClassList;
-
-// export default mathClassList;
