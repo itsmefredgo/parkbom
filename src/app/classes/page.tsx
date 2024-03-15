@@ -5,7 +5,8 @@ import TestingColours from "@/components/classes/TestingColours";
 export default function Classes() {
   return (
     <main
-      className=" pt-[8rem] pb-[3rem] min-h-screen duration-300
+      className=" pt-[8rem] pb-[3rem] duration-300
+                min-h-screen 
                 bg-[#dfe4ea] dark:bg-[#2D2D2D] 
                 text-[#2D2D2D] dark:text-[#F5F5F5]"
     >

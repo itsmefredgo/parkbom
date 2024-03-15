@@ -9,7 +9,7 @@ function ClassesList() {
   const [selectedSubject, setSelectedSubject] = useState("math");
 
   return (
-    <div>
+    <div className="max-w-[80rem] mx-auto">
       <div
         className=" flex  justify-center w-[80%] mx-auto 
                     divide-x-4 divide-[#dfe4ea] dark:divide-[#2D2D2D]"
@@ -43,7 +43,7 @@ function ClassesList() {
           </div>
         </button>
       </div>
-      <div className=" w-[80%] mx-auto mt-6">
+      <div className=" w-[80%] mx-auto my-8 px-4">
         {selectedSubject === "math" ? <MathClassList /> : <EnglishClassList />}
       </div>
     </div>
