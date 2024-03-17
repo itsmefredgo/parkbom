@@ -1,18 +1,18 @@
+import InquiriesIntroduction from "@/components/inquiries/InquiriesIntroduction";
+import InquiriesContactAndLocation from "@/components/inquiries/InquiriesContactAndLocation";
+import InquiriesInstruction from "@/components/inquiries/InquiriesInstruction";
+
 export default function Inquiries() {
   return (
-    <div
-      className=" pt-[6rem] pb-[3rem]
-                bg-[#efefec] dark:bg-[#2D2D2D] 
-                text-[#000000] dark:text-[#F5F5F5]"
+    <main
+      className=" pt-[8rem] pb-[3rem] duration-300
+                min-h-screen 
+                bg-[#dfe4ea] dark:bg-[#2D2D2D] 
+                text-[#2D2D2D] dark:text-[#F5F5F5]"
     >
-      {/* Page Title */}
-      <div
-        className="text-[3rem] mb-8 font-bold px-[5vw] 
-                  laptop:max-w-[80rem] laptop:mx-auto 
-                 text-[#045329] dark:text-[#BFD6D1]"
-      >
-        <h1>INQUIRIES</h1>
-      </div>
-    </div>
+      <InquiriesIntroduction></InquiriesIntroduction>
+      {/* <InquiriesContactAndLocation></InquiriesContactAndLocation> */}
+      {/* <InquiriesInstruction></InquiriesInstruction> */}
+    </main>
   );
 }

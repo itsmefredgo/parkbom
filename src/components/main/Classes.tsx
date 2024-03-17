@@ -1,7 +1,7 @@
 import { FaCaretRight } from "react-icons/fa6";
 import { PiMathOperationsFill } from "react-icons/pi";
 import { TbMessageLanguage } from "react-icons/tb";
-import SectionTitle from "../helpers/SectionTitle";
+import SectionTitle from "./helpers/SectionTitle";
 
 export default function HomeClasses() {
   const mathTableItems = [

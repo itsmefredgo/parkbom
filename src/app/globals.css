@@ -5,8 +5,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
 * {
   /* border: orange solid 1px; */
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* global.css or _app.css */

@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/main/Programstsx"
-  ],
+, "src/components/inquiries/InquiriesContactAndLocation.tsx"  ],
   "exclude": ["node_modules"]
 }

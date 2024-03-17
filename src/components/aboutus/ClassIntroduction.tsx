@@ -3,7 +3,7 @@ import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
 
 function ClassIntroduction() {
   return (
-    <div className="px-[5vw]  laptop:max-w-[80rem] laptop:mx-auto">
+    <div className="px-[5vw] laptop:max-w-[80rem] laptop:mx-auto">
       <Image
         src={parkbom_logo}
         alt="Parkbom"
