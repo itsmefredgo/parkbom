@@ -4,10 +4,11 @@ import Image from "next/image";
 function InquiriesIntroduction() {
   return (
     <section
-      className=" mb-8 ml-6 mx-auto max-w-[60rem] flex flex-col items-start
+      className=" mb-8 px-6 max-w-[60rem] flex flex-col items-start
                 text-[#045329] dark:text-[#BFD6D1] 
-                sm:flex-row sm:items-center tablet:w-[80%] laptop:w-[60%]
-                laptop:mx-auto
+                sm:flex-row sm:items-center 
+                sm:w-[80%] laptop:w-[60%] mx-auto
+                sm:mx-auto sm:px-0
                 "
     >
       <Image
@@ -15,7 +16,7 @@ function InquiriesIntroduction() {
         alt="Parkbom"
         height={100}
         className=" ml-[-1.5rem] dark:brightness-200 sm:pb-2 mr-4
-                  sm:ml-0"
+                  "
       ></Image>
       <h1 className=" font-bold text-[2rem]">INQUIRIES</h1>
     </section>

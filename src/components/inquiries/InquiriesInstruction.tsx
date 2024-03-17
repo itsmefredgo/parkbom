@@ -3,7 +3,13 @@ import { FaClipboardList } from "react-icons/fa6";
 
 function InquiriesInstruction() {
   return (
-    <section className=" mx-6 h-40 tablet:mx-">
+    <section
+      className=" mx-6
+                sm:w-[80%] sm:mx-auto
+                laptop:w-[60%]
+                mb-12
+      "
+    >
       <div
         className=" flex flex-row text-[1.25rem] 
                   text-[#045329] dark:text-[#BFD6D1] font-bold"
