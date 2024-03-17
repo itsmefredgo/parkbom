@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function InquiriesIntroduction() {
   return (
-    <div
+    <section
       className=" mb-8 ml-6 mx-auto max-w-[60rem] flex flex-col items-start
                 text-[#045329] dark:text-[#BFD6D1] 
                 sm:flex-row sm:items-center tablet:w-[80%] laptop:w-[60%]
@@ -18,7 +18,7 @@ function InquiriesIntroduction() {
                   sm:ml-0"
       ></Image>
       <h1 className=" font-bold text-[2rem]">INQUIRIES</h1>
-    </div>
+    </section>
   );
 }
 

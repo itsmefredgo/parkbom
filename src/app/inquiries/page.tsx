@@ -11,8 +11,8 @@ export default function Inquiries() {
                 text-[#2D2D2D] dark:text-[#F5F5F5]"
     >
       <InquiriesIntroduction></InquiriesIntroduction>
+      <InquiriesInstruction></InquiriesInstruction>
       {/* <InquiriesContactAndLocation></InquiriesContactAndLocation> */}
-      {/* <InquiriesInstruction></InquiriesInstruction> */}
     </main>
   );
 }
