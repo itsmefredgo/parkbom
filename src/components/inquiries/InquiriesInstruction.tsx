@@ -4,7 +4,7 @@ import { FaClipboardList } from "react-icons/fa6";
 function InquiriesInstruction() {
   return (
     <section
-      className=" mx-6
+      className=" mx-6 max-w-[60rem]
                 sm:w-[80%] sm:mx-auto
                 laptop:w-[60%]
                 mb-12

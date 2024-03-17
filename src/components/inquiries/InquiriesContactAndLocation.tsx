@@ -14,7 +14,7 @@ const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${NEXT_PUBLIC_KAKA
 function InquiriesAddress() {
   return (
     <section
-      className=" mx-6
+      className=" mx-6 max-w-[60rem]
                 sm:w-[80%] sm:mx-auto
                 laptop:w-[60%]
       "

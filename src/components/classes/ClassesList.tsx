@@ -18,8 +18,8 @@ function ClassesList() {
           <div
             key={index}
             className=" flex justify-center flex-1 
-                    bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
-                    hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
+                      bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
+                      hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
           >
             <button
               className={` px-1 w-full h-full font-bold flex justify-center items-center`}
