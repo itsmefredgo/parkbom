@@ -57,6 +57,7 @@ export default function HomeMethods() {
         <ol className=" flex-[10] mt-8">
           {programItems.map(({ programAttribute, description }, index) => (
             <li
+              onClick={() => expandHideItem(index)}
               className=" flex flex-row justify-between gap-8
                         border-b-2 border-[#5F747C] py-4"
             >
@@ -67,12 +68,7 @@ export default function HomeMethods() {
                 )}
               </div>
               <div>
-                <button
-                  onClick={() => expandHideItem(index)}
-                  className=" text-[1.5rem] w-10"
-                >
-                  +
-                </button>
+                <button className=" text-[1.5rem] w-10">+</button>
               </div>
             </li>
           ))}
