@@ -48,7 +48,10 @@ export default function HomeMethods() {
         ABOUT US <span className=" text-[0.75rem] font-normal">자세히보기</span>
       </div>
 
-      <div className=" flex flex-col sm:flex-row gap-4 text-[#5F747C] font-semibold">
+      <div
+        className=" flex flex-col sm:flex-row gap-4 
+                text-[#5F747C] dark:text-[#acd0de] font-semibold"
+      >
         <div className=" flex-[7] sm:flex sm:items-end">
           <span>
             매일 운동을 하면 건강에도 좋고 스트레스 해소에도 도움이 된다고 해요.
@@ -59,7 +62,7 @@ export default function HomeMethods() {
             <li
               onClick={() => expandHideItem(index)}
               className=" flex flex-row justify-between gap-8
-                        border-b-2 border-[#5F747C] py-4"
+                        border-b-2 border-[#acd0de] py-4"
             >
               <div className=" flex flex-col justify-center">
                 <div className=" ">{programAttribute}</div>
