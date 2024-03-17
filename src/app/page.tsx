@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <Introduction />
       <Methods />
-      <Classes />
-      <Inquiries />
+      {/* <Classes /> */}
+      {/* <Inquiries /> */}
     </main>
   );
 }

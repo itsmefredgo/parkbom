@@ -5,11 +5,23 @@ import programItems, { ProgramItem } from "../data/programs";
 
 export default function HomeMethods() {
   // State to track the selected item and its description
-  const [selectedItem, setSelectedItem] = useState<ProgramItem>({
+
+  const defaultProgram: ProgramItem = {
     programAttribute: "수업 방향",
     description:
       "저희 박봄수학영어에서는 학생들의 수준, 특성, 학습 스타일에 맞추어 수업들이 진행됩니다. ",
-  });
+  };
+
+  const [selectedItem, setSelectedItem] = useState<ProgramItem>(defaultProgram);
+  const [expandedItem, setExpandedItem] = useState<number>(-1);
+
+  const expandHideItem = (input: number) => {
+    if (expandedItem === input) {
+      setExpandedItem(-1);
+    } else {
+      setExpandedItem(input);
+    }
+  };
 
   // Function to handle item selection
   const handleItemSelected = (
@@ -19,19 +31,58 @@ export default function HomeMethods() {
     // Toggle between selecting and unselecting
     setSelectedItem((selectedItem) =>
       selectedItem?.programAttribute === programAttribute
-        ? {
-            programAttribute: "수업 방향",
-            description:
-              "저희 박봄수학영어에서는 학생들의 수준, 특성, 학습 스타일에 맞추어 수업들이 진행됩니다. ",
-          }
+        ? defaultProgram
         : { programAttribute, description }
     );
   };
   return (
-    <section className=" h-[55rem] px-[calc((100vw-60rem)/2)] bg-parkbomLightBg02 pt-28 dark:bg-[#0d1117]">
+    <section
+      className=" min-h-screen m-auto px-[5%] pt-8
+                bg-[#F7F6F0] dark:bg-[#302f2f]"
+    >
       <div
-        className=" border-b-2 border-b-parkbomDarkBg04 dark:border-b-parkbomDarkBg00
-      text-parkbomDarkBg04 dark:text-parkbomDarkBg00 flex justify-between pb-1"
+        className=" text-[3rem] text-[#045329] 
+                  dark:text-[#BFD6D1] font-bold
+                  mt-12 mb-16"
+      >
+        ABOUT US <span className=" text-[0.75rem] font-normal">자세히보기</span>
+      </div>
+
+      <div className=" flex flex-col sm:flex-row gap-4 text-[#5F747C] font-semibold">
+        <div className=" flex-[7] sm:flex sm:items-end">
+          <span>
+            매일 운동을 하면 건강에도 좋고 스트레스 해소에도 도움이 된다고 해요.
+          </span>
+        </div>
+        <ol className=" flex-[10] mt-8">
+          {programItems.map(({ programAttribute, description }, index) => (
+            <li
+              className=" flex flex-row justify-between gap-8
+                        border-b-2 border-[#5F747C] py-4"
+            >
+              <div className=" flex flex-col justify-center">
+                <div className=" ">{programAttribute}</div>
+                {index === expandedItem && (
+                  <div className=" font-normal my-4">{description}</div>
+                )}
+              </div>
+              <div>
+                <button
+                  onClick={() => expandHideItem(index)}
+                  className=" text-[1.5rem] w-10"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      {/* <div
+        className=" border-b-2 border-b-parkbomDarkBg04 flex justify-between
+                dark:border-b-parkbomDarkBg00 
+                text-parkbomDarkBg04 dark:text-parkbomDarkBg00 pb-1"
       >
         <div className=" text-xl">
           <h1>About Us</h1>
@@ -68,7 +119,7 @@ export default function HomeMethods() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
