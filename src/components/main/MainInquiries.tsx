@@ -24,7 +24,10 @@ function MainInquiries() {
                   mb-16"
         >
           INQUIRIES{" "}
-          <Link href={"/inquiries"} className=" text-[0.75rem] font-normal">
+          <Link
+            href={"/inquiries"}
+            className=" text-[0.75rem] font-normal underline"
+          >
             자세히보기
           </Link>
         </div>

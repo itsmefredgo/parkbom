@@ -28,7 +28,10 @@ function MainAboutUs() {
           font-bold mb-16"
         >
           ABOUT US{" "}
-          <Link href={"/aboutus"} className=" text-[0.75rem] font-normal">
+          <Link
+            href={"/aboutus"}
+            className=" text-[0.75rem] font-normal underline"
+          >
             자세히보기
           </Link>
         </div>

@@ -26,7 +26,10 @@ function MainClasses() {
                   mb-16"
         >
           CLASSES{" "}
-          <Link href={"/classes"} className=" text-[0.75rem] font-normal">
+          <Link
+            href={"/classes"}
+            className=" text-[0.75rem] font-normal underline"
+          >
             자세히보기
           </Link>
         </div>
