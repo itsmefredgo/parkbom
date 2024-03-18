@@ -1,3 +1,6 @@
+// Imports
+import Link from "next/link";
+
 // Importing necessary react icons
 import { FaCaretRight } from "react-icons/fa6";
 import { PiMathOperationsFill } from "react-icons/pi";
@@ -23,7 +26,9 @@ function MainClasses() {
                   mb-16"
         >
           CLASSES{" "}
-          <span className=" text-[0.75rem] font-normal">자세히보기</span>
+          <Link href={"/classes"} className=" text-[0.75rem] font-normal">
+            자세히보기
+          </Link>
         </div>
 
         {/* Section contents for CLASSES */}

@@ -1,3 +1,6 @@
+// Imports
+import Link from "next/link";
+
 // Map component import
 import KakaoMap from "./helpers/KakaoMap";
 
@@ -21,7 +24,9 @@ function MainInquiries() {
                   mb-16"
         >
           INQUIRIES{" "}
-          <span className=" text-[0.75rem] font-normal">자세히보기</span>
+          <Link href={"/inquiries"} className=" text-[0.75rem] font-normal">
+            자세히보기
+          </Link>
         </div>
 
         {/* Section contents for CLASSES */}
