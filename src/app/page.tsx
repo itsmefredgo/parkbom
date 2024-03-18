@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <Introduction />
       <Methods />
-      {/* <Classes /> */}
+      <Classes />
       {/* <Inquiries /> */}
     </main>
   );
