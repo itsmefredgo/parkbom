@@ -1,11 +1,12 @@
-import "./Inquiries.css";
-import KakaoMap from "./Map";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaCaretRight } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { FaPhone } from "react-icons/fa6";
+// Map component import
+import KakaoMap from "./helpers/KakaoMap";
 
-export default function HomeInquiries() {
+// Importing necessary react icons
+import { FaPhone, FaLocationDot, FaCaretRight } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
+function MainInquiries() {
+  // Fourth part of parkbom's main webpage: INQUIRIES
   return (
     <section
       className=" m-auto px-[5%]
@@ -13,6 +14,7 @@ export default function HomeInquiries() {
                 text-parkbom19 dark:text-[#c9d1d9]"
     >
       <div className=" max-w-[60rem] mx-auto pb-[15rem] pt-[5rem]">
+        {/* Section heading for ABOUT US */}
         <div
           className=" text-[3rem] text-[#045329] 
                   dark:text-[#BFD6D1] font-bold
@@ -21,7 +23,10 @@ export default function HomeInquiries() {
           INQUIRIES{" "}
           <span className=" text-[0.75rem] font-normal">자세히보기</span>
         </div>
+
+        {/* Section contents for CLASSES */}
         <div className="flex my-8 flex-col md:flex-row">
+          {/* Text information */}
           <div className="mr-8">
             <div className="ml-0 text-2xl flex items-center">
               <FaCaretRight className="ml-[-0.25rem] mr-1" />
@@ -44,6 +49,8 @@ export default function HomeInquiries() {
               <div className="ml-2">010-1234-5678</div>
             </div>
           </div>
+
+          {/* Mapping */}
           <div className="flex-[2.5]">
             <KakaoMap></KakaoMap>
           </div>
@@ -52,3 +59,5 @@ export default function HomeInquiries() {
     </section>
   );
 }
+
+export default MainInquiries;

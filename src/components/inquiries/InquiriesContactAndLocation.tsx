@@ -1,4 +1,4 @@
-import KakaoMap from "../main/Map";
+import KakaoMap from "../main/helpers/KakaoMap";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCaretRight } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";

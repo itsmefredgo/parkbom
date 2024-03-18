@@ -1,4 +1,4 @@
-import { admissionSteps } from "../data/admissionSteps";
+import { admissionSteps } from "../../assets/data/admissionSteps";
 import { FaClipboardList } from "react-icons/fa6";
 
 function InquiriesInstruction() {

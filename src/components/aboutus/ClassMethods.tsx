@@ -1,4 +1,4 @@
-import programItems, { ProgramItem } from "../data/programs";
+import programItems, { ProgramItem } from "../../assets/data/programs";
 import { CiImageOn } from "react-icons/ci";
 
 function checkEven(number: number): boolean {

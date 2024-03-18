@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import ToggleDarkMode from "../main/helpers/ToggleDarkMode";
+import ToggleDarkMode from "../functions/ToggleDarkMode";
 import Image from "next/image";
 import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
 import { FaBars } from "react-icons/fa6";
