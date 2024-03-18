@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <header
-      className=" shadow-lg text-xl fixed top-0 w-screen h-20 z-10 font-semibold 
+      className=" shadow-lg text-xl fixed top-0 w-screen h-20 z-50 font-semibold 
       tablet:flex tablet:flex-row  tablet:justify-around
       text-[#2D2D2D] dark:text-[#F5F5F5]
       bg-[#F5F5F5] dark:bg-[#676767]
