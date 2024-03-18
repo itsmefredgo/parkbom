@@ -9,7 +9,7 @@ export default function Home() {
       <Introduction />
       <Methods />
       <Classes />
-      {/* <Inquiries /> */}
+      <Inquiries />
     </main>
   );
 }
