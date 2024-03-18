@@ -3,7 +3,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaCaretRight } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-import MainTitle from "../main/helpers/SectionTitle";
 import { PiNotePencilBold } from "react-icons/pi";
 
 import Script from "next/script";
