@@ -1,3 +1,4 @@
+// SVG component for About Us Programs section
 function TriangleBottomEdge() {
   return (
     <svg

@@ -1,7 +1,7 @@
-import ClassIntroduction from "@/components/aboutus/ClassIntroduction";
-import ClassDelivery from "@/components/aboutus/ClassDelivery";
-import ClassMethods from "@/components/aboutus/ClassMethods";
-import ClassGallary from "@/components/aboutus/ClassGallary";
+import ClassIntroduction from "@/components/aboutus/AboutUsIntroduction";
+import ClassDelivery from "@/components/aboutus/AboutUsDelivery";
+import ClassMethods from "@/components/aboutus/AboutUsPrograms";
+import ClassGallary from "@/components/aboutus/AboutUsFacility";
 
 export default function AboutUs() {
   return (

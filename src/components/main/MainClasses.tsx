@@ -22,8 +22,7 @@ function MainClasses() {
         {/* Section heading for ABOUT US */}
         <div
           className=" text-[3rem] text-[#045329] 
-                  dark:text-[#BFD6D1] font-bold
-                  mb-16"
+          dark:text-[#BFD6D1] font-bold mb-16"
         >
           CLASSES{" "}
           <Link

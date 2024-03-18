@@ -1,28 +1,31 @@
-// Dividers in Class Progress Steps Section
+// Importing components
 import TriangleRightEdge from "@/components/aboutus/helper/TriangleRightEdge";
 import TriangleBottomEdge from "@/components/aboutus/helper/TriangleBottomEdge";
-import ClassProgressStep from "./helper/ClassProgressStep";
+import ClassProgressStep from "@/components/aboutus/helper/ClassProgressStep";
 
-// Data Imports
-import classProgressSteps from "../../assets/data/classProgressSteps";
+// Importing classes steps
+import classProgressSteps from "@/assets/data/classProgressSteps";
 
-function ClassDelivery() {
+function AboutUsDelivery() {
+  // Third part of parkbom's ABOUT US page
   return (
-    <div
+    <section
       className=" px-[calc(5vw+2rem)] pt-8 pb-16 
-                bg-[#d9ddd1] dark:bg-[#1c1c1c]"
+      bg-[#d9ddd1] dark:bg-[#1c1c1c]"
     >
       <div className=" laptop:max-w-[70rem] laptop:mx-auto">
+        {/* Heading of the section */}
         <h2 className=" text-[2rem] pb-4">수업진행</h2>
 
+        {/* Steps of class delivery steps */}
         <div className=" flex flex-col laptop:flex-row">
           {classProgressSteps.map(({ stepTitle, description }, index) => (
             <>
               <div
                 className={` relative flex justify-around items-center h-[9rem] 
-                      bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none 
-                      laptop:w-[calc((100%-9rem)/4)] laptop:h-[18rem] 
-                      laptop:flex-col laptop:justify-center laptop:gap-4
+                bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none 
+                laptop:w-[calc((100%-9rem)/4)] laptop:h-[18rem] 
+                laptop:flex-col laptop:justify-center laptop:gap-4
                     ${
                       index == 0
                         ? "rounded-t-3xl laptop:rounded-l-3xl"
@@ -47,8 +50,8 @@ function ClassDelivery() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default ClassDelivery;
+export default AboutUsDelivery;

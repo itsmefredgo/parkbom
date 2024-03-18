@@ -1,8 +1,11 @@
+// Importing necessary react icons
 import { CiImageOn } from "react-icons/ci";
 
-function ClassGallary() {
+function AboutUsFacility() {
+  // Fourth part of parkbom's ABOUT US page
   return (
     <div className="px-[12vw] py-[2rem]  laptop:max-w-[80rem] laptop:mx-auto">
+      {/* Heading of the section */}
       <h2 className=" text-[2rem]">갤러리</h2>
       <div className=" sm:grid sm:grid-cols-2 laptop:grid-cols-3 gap-4 ">
         <div className=" mt-4">
@@ -34,4 +37,4 @@ function ClassGallary() {
   );
 }
 
-export default ClassGallary;
+export default AboutUsFacility;
