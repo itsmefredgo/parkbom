@@ -4,7 +4,7 @@ import TriangleBottomEdge from "@/components/aboutus/helper/TriangleBottomEdge";
 import ClassProgressStep from "./helper/ClassProgressStep";
 
 // Data Imports
-import classProgressSteps from "../data/classProgressSteps";
+import classProgressSteps from "../../assets/data/classProgressSteps";
 
 function ClassDelivery() {
   return (

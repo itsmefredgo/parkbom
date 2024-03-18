@@ -1,14 +1,15 @@
+// Parkbom Logo Imports
 import Image from "next/image";
-
-// Parkbom Logo with transparent background
 import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
 
-export default function Introduction() {
+function MainIntroduction() {
+  // First part of parkbom's main webpage
   return (
     <section
       className=" h-screen relative flex items-center 
                 bg-[#F7F6F0] dark:bg-[#302f2f]"
     >
+      {/* Title and introduction to the website */}
       <div
         className="h-[calc(100%-1rem)] w-[calc(100%-1rem)] m-auto 
                   rounded-2xl relative  overflow-hidden"
@@ -29,6 +30,7 @@ export default function Introduction() {
             초, 중, 고 학년 모두에게 적합한 최고의 교육을 제공합니다.
           </p>
         </div>
+        {/* Background image of the introduction */}
         <div
           className=" h-full w-full absolute
                     bg-[url('/../../assets/images/main-bg.jpeg')]
@@ -39,3 +41,5 @@ export default function Introduction() {
     </section>
   );
 }
+
+export default MainIntroduction;
