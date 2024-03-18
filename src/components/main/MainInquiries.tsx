@@ -12,16 +12,14 @@ function MainInquiries() {
   // Fourth part of parkbom's main webpage: INQUIRIES
   return (
     <section
-      className=" m-auto px-[5%]
-                bg-[#F7F6F0] dark:bg-[#302f2f]
-                text-parkbom19 dark:text-[#c9d1d9]"
+      className=" m-auto px-[5%] bg-[#F7F6F0] dark:bg-[#302f2f]
+      text-parkbom19 dark:text-[#c9d1d9]"
     >
       <div className=" max-w-[60rem] mx-auto pb-[15rem] pt-[5rem]">
         {/* Section heading for ABOUT US */}
         <div
           className=" text-[3rem] text-[#045329] 
-                  dark:text-[#BFD6D1] font-bold
-                  mb-16"
+          dark:text-[#BFD6D1] font-bold mb-16"
         >
           INQUIRIES{" "}
           <Link
