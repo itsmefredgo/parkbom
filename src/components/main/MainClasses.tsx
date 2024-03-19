@@ -14,7 +14,7 @@ function MainClasses() {
   // Third part of parkbom's main webpage: CLASSES
   return (
     <section
-      className=" m-auto px-[5%] 
+      className=" m-auto px-[5%] duration-300
       bg-[#F7F6F0] dark:bg-[#302f2f]
       text-parkbom19 dark:text-[#c9d1d9]"
     >
@@ -56,7 +56,7 @@ function MainClasses() {
               </div>
               <ul className=" flex-[2] text-xl">
                 {mathTableItems.map((mathTableItems, index) => (
-                  <li className="flex items-center" key={index}>
+                  <li className="flex items-center mb-4" key={index}>
                     <FaCaretRight />
                     {mathTableItems}
                   </li>
@@ -73,7 +73,7 @@ function MainClasses() {
               </div>
               <ul className=" flex-[2] text-xl">
                 {englishTableItems.map((englishTableItems, index) => (
-                  <li className="flex items-center" key={index}>
+                  <li className="flex items-center mb-4" key={index}>
                     <FaCaretRight />
                     {englishTableItems}
                   </li>

@@ -13,7 +13,7 @@ function MainInquiries() {
   return (
     <section
       className=" m-auto px-[5%] bg-[#F7F6F0] dark:bg-[#302f2f]
-      text-parkbom19 dark:text-[#c9d1d9]"
+      text-parkbom19 dark:text-[#c9d1d9] duration-300"
     >
       <div className=" max-w-[60rem] mx-auto pb-[15rem] pt-[5rem]">
         {/* Section heading for ABOUT US */}

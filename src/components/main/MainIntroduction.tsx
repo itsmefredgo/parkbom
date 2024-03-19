@@ -7,7 +7,7 @@ function MainIntroduction() {
   return (
     <section
       className=" h-screen relative flex items-center 
-      bg-[#F7F6F0] dark:bg-[#302f2f]"
+      bg-[#F7F6F0] dark:bg-[#302f2f] duration-300"
     >
       {/* Title and introduction to the website */}
       <div

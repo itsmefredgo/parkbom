@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  mode: "JIT",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,7 +16,7 @@ const config: Config = {
       },
       screens: {
         tablet: "768px",
-        laptop: "1200px",
+        laptop: "1400px",
       },
       colors: {
         parkbomLightBg00: "#F2F1EB",

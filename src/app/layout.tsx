@@ -5,6 +5,7 @@ import { Providers } from "../Redux/provider";
 import Header from "@/components/includes/Header";
 import Footer from "@/components/includes/Footer";
 import "./globals.css";
+import "./animation.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

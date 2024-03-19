@@ -6,7 +6,10 @@ function AboutUsIntroduction() {
   // First part of parkbom's ABOUT US page
   return (
     // Title and introduction to the website
-    <section className="px-[5vw] laptop:max-w-[80rem] laptop:mx-auto">
+    <section
+      // className="px-[5vw] laptop:max-w-[70rem] laptop:mx-auto"
+      className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto"
+    >
       <Image
         src={parkbom_logo}
         alt="Parkbom"

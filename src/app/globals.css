@@ -12,46 +12,12 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-/* global.css or _app.css */
-.transition-all {
-  transition: all 0.3s ease-in-out;
-}
-
-/* Applying automatically in dark mode */
-@layer base {
-  body.dark {
-    @apply transition-all;
-  }
-}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* To remove x-axis scroll bar caused from horizontal scroll bar space */
 body {
   overflow-x: hidden;
-}
-
-.dark-transition {
-  transition: all 0.3s ease-in-out; /* Adjust duration and timing function as needed */
-}
-
-@keyframes extendHeaderAnimation {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes foldHeaderAnimation {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(100%);
-  }
 }

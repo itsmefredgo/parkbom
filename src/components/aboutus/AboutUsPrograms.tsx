@@ -3,15 +3,15 @@ import programItems from "@/assets/data/programs";
 
 // Importing necessary react icons
 import { CiImageOn } from "react-icons/ci";
-
+const test = "Test";
 function AboutUsPrograms() {
   // Second part of parkbom's ABOUT US page
   return (
-    <div className="my-20 px-[5vw] laptop:max-w-[80rem] laptop:mx-auto">
+    <section className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[10rem]">
       {/* Heading of the section */}
       <h2
-        className=" text-[2rem] pb-2 pl-2 border-b-2 
-        border-black dark:border-[#BFD6D1] border-solid"
+        className=" text-[2.5rem] font-bold pb-16 pl-2 border-black 
+        dark:border-[#BFD6D1] text-[#045329] dark:text-[#BFD6D1]"
       >
         수업방식
       </h2>
@@ -22,18 +22,22 @@ function AboutUsPrograms() {
         {programItems.map(({ programAttribute, description }, index) => (
           <div
             key={index}
-            className={` border-b-2 border-black border-solid
+            className={` border-b-2 border-black border-dashed
             dark:border-[#BFD6D1]
             p-8 relative ${
               index % 2 === 0
                 ? " tablet:border-r-2" // Even
                 : "" // Odd
+            } ${
+              index === 0 || index === 1
+                ? " tablet:border-t-2" // Even
+                : "" // Odd
             }`}
           >
             <div className=" flex sm:h-[8rem] tablet:h-auto">
               <div className=" text-[1.25rem]">
-                <span className=" font-bold text-[2rem]">{index + 1}.</span>{" "}
-                {programAttribute}
+                <span className=" font-bold text-[2rem]">{index + 1}.</span>
+                {" " + programAttribute}
               </div>
             </div>
             <div
@@ -47,7 +51,7 @@ function AboutUsPrograms() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

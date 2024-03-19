@@ -10,12 +10,20 @@ function AboutUsDelivery() {
   // Third part of parkbom's ABOUT US page
   return (
     <section
-      className=" px-[calc(5vw+2rem)] pt-8 pb-16 
-      bg-[#d9ddd1] dark:bg-[#1c1c1c]"
+      className=" pt-8 pb-16 
+      bg-[#e8e8e8] dark:bg-[#1c1c1c]"
     >
-      <div className=" laptop:max-w-[70rem] laptop:mx-auto">
+      <div
+        className=" px-[1rem] sm:px-[5rem] md:w-[90%] lg:w-[60rem] xl:w-[65rem] 
+        laptop:w-[75rem] mx-auto my-[10rem]"
+      >
         {/* Heading of the section */}
-        <h2 className=" text-[2rem] pb-4">수업진행</h2>
+        <h2
+          className=" text-[2.5rem] font-bold pb-16 pl-2 border-black 
+        dark:border-[#BFD6D1] text-[#045329] dark:text-[#BFD6D1]"
+        >
+          수업진행
+        </h2>
 
         {/* Steps of class delivery steps */}
         <div className=" flex flex-col laptop:flex-row">
