@@ -6,7 +6,7 @@ export default function Inquiries() {
   return (
     <main
       className=" pt-[6rem] pb-[3rem] duration-300 min-h-screen 
-                bg-[#dfe4ea] dark:bg-[#2D2D2D] 
+                bg-[#efefec] dark:bg-[#2D2D2D] 
                 text-[#2D2D2D] dark:text-[#F5F5F5]"
     >
       <InquiriesIntroduction></InquiriesIntroduction>
