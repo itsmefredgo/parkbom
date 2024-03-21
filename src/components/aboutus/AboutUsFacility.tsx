@@ -1,5 +1,4 @@
 // Importing necessary react icons
-import { CiImageOn } from "react-icons/ci";
 import PlaceHolder from "@/assets/images/temp.jpg";
 import Image from "next/image";
 
