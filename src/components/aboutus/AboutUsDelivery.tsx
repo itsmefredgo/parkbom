@@ -1,6 +1,5 @@
 // Importing components
 import TriangleRightEdge from "@/components/aboutus/helper/TriangularDivider";
-import TriangleBottomEdge from "@/components/aboutus/helper/TriangleBottomEdge";
 import ClassProgressStep from "@/components/aboutus/helper/ClassProgressStep";
 
 // Importing classes steps
@@ -49,15 +48,13 @@ function AboutUsDelivery() {
                 ></ClassProgressStep>
               </div>
               {index + 1 != classProgressSteps.length && (
-                <>
-                  {/* <TriangleBottomEdge></TriangleBottomEdge> */}
-                  <TriangleRightEdge
-                    triangleColour={{ light: "#BFD6D1", dark: "#5b6d68" }}
-                    dividerColour={{ light: "#e8e8e8", dark: "#1c1c1c" }}
-                    secondaryAxis="3rem"
-                    wideScreen={false}
-                  ></TriangleRightEdge>
-                </>
+                /* <TriangleBottomEdge></TriangleBottomEdge> */
+                <TriangleRightEdge
+                  triangleColour={{ light: "#BFD6D1", dark: "#5b6d68" }}
+                  dividerColour={{ light: "#e8e8e8", dark: "#1c1c1c" }}
+                  secondaryAxis="3rem"
+                  wideScreen={false}
+                ></TriangleRightEdge>
               )}
             </>
           ))}
