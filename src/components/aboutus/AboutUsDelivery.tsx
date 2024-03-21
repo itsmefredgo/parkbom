@@ -1,5 +1,5 @@
 // Importing components
-import TriangleRightEdge from "@/components/aboutus/helper/TriangleRightEdge";
+import TriangleRightEdge from "@/components/aboutus/helper/TriangularDivider";
 import TriangleBottomEdge from "@/components/aboutus/helper/TriangleBottomEdge";
 import ClassProgressStep from "@/components/aboutus/helper/ClassProgressStep";
 
@@ -10,7 +10,7 @@ function AboutUsDelivery() {
   // Third part of parkbom's ABOUT US page
   return (
     <section
-      className=" pt-8 pb-16 
+      className=" pt-8 pb-16 transition-[300ms]
       bg-[#e8e8e8] dark:bg-[#1c1c1c]"
     >
       <div
@@ -26,7 +26,7 @@ function AboutUsDelivery() {
         </h2>
 
         {/* Steps of class delivery steps */}
-        <div className=" flex flex-col laptop:flex-row">
+        <div className=" flex flex-col laptop:flex-row transition-[300ms]">
           {classProgressSteps.map(({ stepTitle, description }, index) => (
             <>
               <div
@@ -50,8 +50,13 @@ function AboutUsDelivery() {
               </div>
               {index + 1 != classProgressSteps.length && (
                 <>
-                  <TriangleBottomEdge></TriangleBottomEdge>
-                  <TriangleRightEdge></TriangleRightEdge>
+                  {/* <TriangleBottomEdge></TriangleBottomEdge> */}
+                  <TriangleRightEdge
+                    triangleColour={{ light: "#BFD6D1", dark: "#5b6d68" }}
+                    dividerColour={{ light: "#e8e8e8", dark: "#1c1c1c" }}
+                    secondaryAxis="3rem"
+                    wideScreen={false}
+                  ></TriangleRightEdge>
                 </>
               )}
             </>
