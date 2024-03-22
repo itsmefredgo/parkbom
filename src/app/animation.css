@@ -79,3 +79,17 @@
     margin-bottom: 0rem;
   }
 }
+
+@keyframes headerLinkSelect {
+  0% {
+    transform: translateY(0rem);
+    border-bottom: solid 2.5px #00000000;
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0rem);
+    border-bottom: solid 2.5px #3f6e37;
+  }
+}

@@ -1,12 +1,11 @@
 function ClassIntroduction() {
   return (
-    <h1
-      className="text-[3rem] mb-8 font-bold w-[80%] mx-auto max-w-[40rem]
-                  laptop:max-w-[60rem] laptop:mx-auto 
-                 text-[#045329] dark:text-[#BFD6D1]"
+    <div
+      className=" max-w-[60rem] mx-auto mb-8
+        text-[#045329] dark:text-[#BFD6D1] text-[3rem] font-bold"
     >
-      CLASSES
-    </h1>
+      <h1 className="w-[80%] mx-auto">CLASSES</h1>
+    </div>
   );
 }
 

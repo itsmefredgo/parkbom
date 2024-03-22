@@ -7,7 +7,7 @@ const test = "Test";
 function AboutUsPrograms() {
   // Second part of parkbom's ABOUT US page
   return (
-    <section className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[10rem]">
+    <section className=" sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[10rem]">
       {/* Heading of the section */}
       <h2
         className=" text-[2.5rem] font-bold pb-16 pl-2 border-black 

@@ -60,7 +60,7 @@ export default function Header() {
             href={route}
             className={`ml-12 hidden tablet:block border-b-[2.5px] ${
               route === currentPage
-                ? "border-[#3F6E37] dark:border-[#5ea651]"
+                ? " dark:border-[#5ea651] animate-[headerLinkSelect_0.25s_ease_forwards]"
                 : "border-[#00000000]"
             }`}
             onClick={() => setCurrentPage(route)}

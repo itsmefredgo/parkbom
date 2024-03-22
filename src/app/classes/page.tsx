@@ -1,18 +1,15 @@
 import ClassIntroduction from "@/components/classes/ClassIntroduction";
 import ClassesList from "@/components/classes/ClassesList";
-import TestingColours from "@/components/classes/TestingColours";
 
 export default function Classes() {
   return (
-    <main
-      className=" pt-[8rem] pb-[3rem] duration-300
-                min-h-screen 
-                bg-[#efefec] dark:bg-[#2D2D2D] 
-                text-[#2D2D2D] dark:text-[#F5F5F5]"
+    <section
+      className=" pt-[10rem] pb-[3rem]
+      bg-[#efefec] dark:bg-[#2D2D2D] 
+      text-[#000000] dark:text-[#F5F5F5] duration-300"
     >
       <ClassIntroduction></ClassIntroduction>
       <ClassesList></ClassesList>
-      {/* <TestingColours></TestingColours> */}
-    </main>
+    </section>
   );
 }

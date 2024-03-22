@@ -17,7 +17,7 @@ function ClassesListDisplay(props: propsType) {
     <div className="grid grid-cols-1 w-full">
       {selectedClassList.map(({ classTitle, description }, index) => (
         <div
-          className={` break-keep flex tablet:flex-row my-4
+          className={` break-keep flex tablet:flex-row my-8
                       ${index == 0 ? "flex-row" : "flex-col"}`}
           key={index}
         >
@@ -30,13 +30,13 @@ function ClassesListDisplay(props: propsType) {
             {classTitle}
           </div>
           <div
-            className={` flex-1 pl-4 mt-4 tablet:mt-0 ${
+            className={` flex-1 pl-4 md:pl-[4rem] mt-4 tablet:mt-0 ${
               index == 0 && "border-b-2 border-[#a7bf81] flex-1"
             }`}
           >
             {description.map((information, index) => (
               <ul key={index}>
-                <li>- {information}</li>
+                <li className=" list-disc">{information}</li>
               </ul>
             ))}
           </div>

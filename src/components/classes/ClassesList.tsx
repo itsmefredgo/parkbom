@@ -6,41 +6,35 @@ import { useState } from "react";
 
 function ClassesList() {
   const [selectedSubject, setSelectedSubject] = useState("Math");
-  const subjectList: string[] = ["Math", "English"];
+  const subjectList: string[] = ["수학 수업", "영어 수업"];
 
   return (
-    <div className="max-w-[80rem] mx-auto">
-      <div
-        className=" flex  justify-center w-[80%] mx-auto rounded-2xl overflow-hidden h-16
-                    divide-x-4 divide-[#dfe4ea] dark:divide-[#2D2D2D]"
-      >
-        {subjectList.map((subjectForButton, index) => (
-          <div
-            key={index}
-            className=" flex justify-center flex-1 
-                      bg-[#a4c7cf] dark:bg-[#7db1bd] overflow-hidden
-                      hover:bg-[#8fafb5] dark:hover:bg-[#a2c7cd]"
-          >
-            <button
-              className={` px-1 w-full h-full font-bold flex justify-center items-center`}
-              onClick={() => setSelectedSubject(subjectForButton)}
-            >
-              <div
-                className={` w-fit h-fit ${
-                  selectedSubject === subjectForButton &&
-                  " border-b-4 border-[#2D2D2D]"
-                }`}
-              >
-                {subjectForButton}
-              </div>
-            </button>
-          </div>
-        ))}
+    <section className="max-w-[60rem] mx-auto">
+      <div className=" flex w-[80%] mx-auto font-bold text-xl">
+        <div className=" w-[8rem]">
+          <button className="" onClick={() => setSelectedSubject("Math")}>
+            <div className="">수학 수업</div>
+            <div
+              className={` border-b-2 border-[#045329] dark:border-[#a6ccb8]
+            ${
+              selectedSubject === "English"
+                ? "translate-x-[8rem] duration-150"
+                : "translate-x-[0rem] duration-150"
+            }
+            `}
+            ></div>
+          </button>
+        </div>
+        <div className="">
+          <button className="" onClick={() => setSelectedSubject("English")}>
+            <div className="">영어 수업</div>
+          </button>
+        </div>
       </div>
-      <div className=" w-[80%] mx-auto my-8 px-4">
+      <div className=" w-[80%] mx-auto my-8">
         <ClassesListDisplay selectedSubject={selectedSubject} />
       </div>
-    </div>
+    </section>
   );
 }
 
