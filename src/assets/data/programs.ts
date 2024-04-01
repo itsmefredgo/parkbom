@@ -17,7 +17,7 @@ const programItems: ProgramItem[] = [
   {
     programAttribute: "맞춤 교재",
     description:
-      "학생 개인별 강단점 분석의 바탕으로한 다향한 유형의 문제를 통하여 문제 해결 능력을 향상시킵니다.",
+      "학생 개인별 강단점 분석을 바탕으로한 다향한 유형의 문제를 통하여 문제 해결 능력을 향상시킵니다.",
   },
   {
     programAttribute: "학교별 맞춤 전략",
@@ -27,7 +27,7 @@ const programItems: ProgramItem[] = [
   {
     programAttribute: "실전 모의고사",
     description:
-      "학생들이 시험에 대비하면서 실제 시험과 유사한 환경에서 자신의 실력을 확인하도 실전 감각을 향상 시킬 수 있도록 도와줍니다.",
+      "학생들이 시험에 대비하면서 실제 시험과 유사한 환경에서 자신의 실력을 확인하고 실전 감각을 향상 시킬 수 있도록 도와줍니다.",
   },
   {
     programAttribute: "자기주도 학습력",

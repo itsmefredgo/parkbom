@@ -48,7 +48,7 @@ function MainClasses() {
                 {mathTableItems.map((mathTableItems, index) => (
                   <li className="flex items-center mb-4" key={index}>
                     <FaCaretRight />
-                    {mathTableItems}
+                    <Link href={"/classes"}>{mathTableItems}</Link>
                   </li>
                 ))}
               </ul>
@@ -65,7 +65,7 @@ function MainClasses() {
                 {englishTableItems.map((englishTableItems, index) => (
                   <li className="flex items-center mb-4" key={index}>
                     <FaCaretRight />
-                    {englishTableItems}
+                    <Link href={"/classes"}>{englishTableItems}</Link>
                   </li>
                 ))}
               </ul>

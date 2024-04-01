@@ -18,8 +18,8 @@ function AboutUsIntroduction() {
       ></Image>
       <div className=" w-[20rem] break-keep ml-2">
         수학을 잘 하는 왕도는 따로 없다. <br />
-        제능이나 기술이 필요한 것도 아니다. <br />
-        느려도 뒤로 돌아가 놓친 것도 찾고 <br />
+        재능이나 기술이 필요한 것도 아니다. <br />
+        느려도 뒤로 돌아가 놓친 것을 찾고 <br />
         계단을 오르다 보면 누구나 할 수 있다. <br />
         피하지 말고 부딪혀봐야 인생은 짜릿해진다.
       </div>
