@@ -29,8 +29,8 @@ function AboutUsDelivery() {
           {classProgressSteps.map(({ stepTitle, description }, index) => (
             <>
               <div
-                className={` relative flex justify-around items-center h-[9rem] 
-                bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none 
+                className={` relative flex justify-between items-center h-[9rem] 
+                bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none p-12
                 laptop:w-[calc((100%-9rem)/4)] laptop:h-[18rem] 
                 laptop:flex-col laptop:justify-center laptop:gap-4
                     ${
