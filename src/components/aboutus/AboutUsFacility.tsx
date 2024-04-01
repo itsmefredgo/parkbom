@@ -51,7 +51,6 @@ function AboutUsFacility() {
               layout="fill"
               className=" object-cover"
               priority={true}
-              style={{tableLayout: "fill"}}
             ></Image>
           </div>
         ))}
