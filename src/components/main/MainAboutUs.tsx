@@ -53,10 +53,10 @@ function MainAboutUs() {
           }
           `}
           >
-            <span>
+            {/* <span>
               매일 운동을 하면 건강에도 좋고 스트레스 해소에도 도움이 된다고
               해요.
-            </span>
+            </span> */}
           </div>
           <ol
             className={` flex-[10] ${

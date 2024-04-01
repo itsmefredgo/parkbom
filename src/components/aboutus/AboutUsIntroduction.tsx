@@ -17,9 +17,11 @@ function AboutUsIntroduction() {
         className=" ml-[-1rem] dark: brightness-200"
       ></Image>
       <div className=" w-[20rem] break-keep ml-2">
-        조용한 공원 길을 따라 걷다 보면 시원한 가을 바람이 스쳐 지나가고 마음이
-        편안해집니다. 이맘때 따뜻한 커피 한 잔과 함께 가을의 아름다움을 만끽하는
-        것은 정말 즐거운 일입니다.
+        수학을 잘 하는 왕도는 따로 없다. <br />
+        제능이나 기술이 필요한 것도 아니다. <br />
+        느려도 뒤로 돌아가 놓친 것도 찾고 <br />
+        계단을 오르다 보면 누구나 할 수 있다. <br />
+        피하지 말고 부딪혀봐야 인생은 짜릿해진다.
       </div>
     </section>
   );

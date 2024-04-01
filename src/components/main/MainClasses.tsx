@@ -35,16 +35,6 @@ function MainClasses() {
 
         {/* Section contents for CLASSES */}
         <div>
-          <h2 className=" text-[1.5rem] flex flex-row">
-            <BsListCheck className=" text-[2rem] mr-[0.5rem] mt-[0.125rem]" />
-            <p>
-              저희 박봄수학영어는 전 학년의 학생들의{" "}
-              <span className=" font-bold text-[#5F747C] dark:text-[#acd0de]">
-                수학/영어
-              </span>
-              를 지도하고 있습니다.
-            </p>
-          </h2>
           <div className=" flex my-12 flex-col gap-12 md:flex-row">
             {/* Math classes section */}
             <div className=" flex-[1] flex">

@@ -40,6 +40,7 @@ function AboutUsDelivery() {
                         ? "rounded-b-3xl laptop:rounded-r-3xl"
                         : ""
                     }`}
+                key={index}
               >
                 <ClassProgressStep
                   title={stepTitle}
