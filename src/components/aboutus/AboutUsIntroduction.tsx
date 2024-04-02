@@ -1,6 +1,6 @@
 // Parkbom Logo Imports
 import Image from "next/image";
-import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
+import parkbom_logo from "@/../public/assets/images/mainImages/parkbom-logo-tpbg.png";
 
 function AboutUsIntroduction() {
   // First part of parkbom's ABOUT US page

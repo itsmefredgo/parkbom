@@ -3,13 +3,11 @@
 import Link from "next/link";
 import ToggleDarkMode from "../functions/ToggleDarkMode";
 import Image from "next/image";
-import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
+import parkbom_logo from "@/../public/assets/images/mainImages/parkbom-logo-tpbg.png";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { usePathname } from "next/navigation";
-
-import { useEffect } from "react";
 
 export default function Header() {
   const pages: [string, string][] = [

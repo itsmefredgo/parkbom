@@ -1,10 +1,15 @@
 // Importing a list of program characteristics and descriptions
-import programItems from "@/assets/data/programs";
+import programItems from "@/../public/data/programs";
+import icon1 from "@/../public/assets/icons/programsIcons/program_1.svg";
+import icon2 from "@/../public/assets/icons/programsIcons/program_2.svg";
+import icon3 from "@/../public/assets/icons/programsIcons/program_3.svg";
+import icon4 from "@/../public/assets/icons/programsIcons/program_4.svg";
+import icon5 from "@/../public/assets/icons/programsIcons/program_5.svg";
+import icon6 from "@/../public/assets/icons/programsIcons/program_6.svg";
+import Image from "next/image";
 
-// Importing necessary react icons
-import { CiImageOn } from "react-icons/ci";
-const test = "Test";
 function AboutUsPrograms() {
+  const iconsList = [icon1, icon2, icon3, icon4, icon5, icon6];
   // Second part of parkbom's ABOUT US page
   return (
     <section className=" sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[10rem]">
@@ -42,10 +47,14 @@ function AboutUsPrograms() {
             </div>
             <div
               className=" mt-4 flex justify-center
-              sm:mt-0 sm:w-[calc(100%-4rem)] sm:absolute sm:top-8
+              sm:mt-0 sm:w-[calc(100%-4rem)] sm:absolute sm:top-12
               tablet:relative tablet:top-0 tablet:w-auto tablet:mt-2"
             >
-              <CiImageOn className=" h-[8rem] w-[8rem]"></CiImageOn>
+              <Image
+                src={iconsList[index]}
+                alt="Program Icon"
+                className=" h-[6rem] w-[6rem]"
+              />
             </div>
             <div className=" p-4">{description}</div>
           </div>

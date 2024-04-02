@@ -1,4 +1,4 @@
-import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
+import parkbom_logo from "@/../public/assets/images/mainImages/parkbom-logo-tpbg.png";
 import Image from "next/image";
 
 function InquiriesIntroduction() {

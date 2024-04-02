@@ -1,9 +1,9 @@
 // Importing components
-import TriangleRightEdge from "@/components/aboutus/helper/TriangularDivider";
-import ClassProgressStep from "@/components/aboutus/helper/ClassProgressStep";
+import TriangleRightEdge from "@/components/ui/TriangularDivider";
+import ClassProgressStep from "@/components/ui/ClassProgressStep";
 
 // Importing classes steps
-import classProgressSteps from "@/assets/data/classProgressSteps";
+import classProgressSteps from "../../../public/data/classProgressSteps";
 
 function AboutUsDelivery() {
   // Third part of parkbom's ABOUT US page
@@ -30,7 +30,7 @@ function AboutUsDelivery() {
             <>
               <div
                 className={` relative flex justify-between items-center h-[9rem] 
-                bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none p-12
+                bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none p-12 laptop:p-0
                 laptop:w-[calc((100%-9rem)/4)] laptop:h-[18rem] 
                 laptop:flex-col laptop:justify-center laptop:gap-4
                     ${

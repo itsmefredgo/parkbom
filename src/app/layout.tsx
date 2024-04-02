@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Providers } from "../Redux/provider";
-
+import "@/../styles/globals.css";
+import "@/../styles/animation.css";
 import Header from "@/components/includes/Header";
 import Footer from "@/components/includes/Footer";
-import "./globals.css";
-import "./animation.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className=" fred">
-      {/* <body className={inter.className}> */}
-      <body className={`${inter.className} fred`}>
+      <body className={inter.className}>
         <Header></Header>
-        <Providers>{children}</Providers>
+        {children}
         <Footer></Footer>
       </body>
     </html>

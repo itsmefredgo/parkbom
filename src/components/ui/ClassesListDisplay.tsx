@@ -1,4 +1,7 @@
-import { mathClassList, englishClassList } from "@/assets/data/classesListData";
+import {
+  mathClassList,
+  englishClassList,
+} from "../../../public/data/classesListData";
 
 type propsType = {
   selectedSubject: string;

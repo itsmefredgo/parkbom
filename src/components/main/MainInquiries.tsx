@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // Map component import
-import KakaoMap from "./helpers/KakaoMap";
+import KakaoMap from "../ui/KakaoMap";
 
 // Importing necessary react icons
 import { FaPhone, FaLocationDot, FaCaretRight } from "react-icons/fa6";

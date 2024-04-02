@@ -8,7 +8,10 @@ import { TbMessageLanguage } from "react-icons/tb";
 import { BsListCheck } from "react-icons/bs";
 
 // Importing lists of classes to display
-import { mathTableItems, englishTableItems } from "@/assets/data/classesList";
+import {
+  mathTableItems,
+  englishTableItems,
+} from "../../../public/data/classesList";
 
 function MainClasses() {
   // Third part of parkbom's main webpage: CLASSES

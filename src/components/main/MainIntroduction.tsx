@@ -1,6 +1,6 @@
 // Parkbom Logo Imports
 import Image from "next/image";
-import parkbom_logo from "@/assets/images/parkbom-logo-tpbg.png";
+import parkbom_logo from "@/../public/assets/images/mainImages/parkbom-logo-tpbg.png";
 
 function MainIntroduction() {
   // First part of parkbom's main webpage
@@ -12,7 +12,7 @@ function MainIntroduction() {
       {/* Title and introduction to the website */}
       <div
         className="h-[calc(100%-1rem)] w-[calc(100%-1rem)] m-auto 
-        rounded-2xl relative  overflow-hidden"
+        rounded-2xl relative overflow-hidden"
       >
         <div className="pt-[15%] pl-8 absolute z-10 md:pl-20 lg:pl-28">
           <div className=" flex flex-row items-center">
@@ -40,8 +40,8 @@ function MainIntroduction() {
         </div>
         {/* Background image of the introduction */}
         <div
-          className=" h-full w-full absolute
-          bg-[url('/../../assets/images/main-bg.jpeg')]
+          className=" h-full w-full absolute 
+          bg-[url('/assets/images/mainImages/main-bg.jpeg')]
           bg-cover bg-top opacity-50 overflow-hidden
           dark:brightness-50 dark:opacity-80"
         ></div>

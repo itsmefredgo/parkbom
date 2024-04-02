@@ -1,6 +1,6 @@
 "use client";
 
-import ClassesListDisplay from "./helper/ClassesListDisplay";
+import ClassesListDisplay from "../ui/ClassesListDisplay";
 
 import { useState } from "react";
 

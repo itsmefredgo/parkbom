@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 // Importing a list of program characteristics and descriptions
-import programItems from "../../assets/data/programs";
+import programItems from "../../../public/data/programs";
 
 function MainAboutUs() {
   // State managing current selected program to view description
