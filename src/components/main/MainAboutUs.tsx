@@ -26,7 +26,7 @@ function MainAboutUs() {
         {/* Section heading for ABOUT US */}
         <div
           className=" text-[3rem] text-[#045329] dark:text-[#BFD6D1] 
-          font-bold mb-[2rem] sm:mb-[8rem] lg:mb-[4rem]"
+          font-bold "
         >
           ABOUT US{" "}
           <Link
@@ -39,25 +39,11 @@ function MainAboutUs() {
 
         {/* Section contents for ABOUT US */}
         <div
-          className=" flex flex-col sm:flex-row gap-4 lg:gap-20 
-          font-semibold text-[#5F747C] dark:text-[#acd0de]"
+          className=" font-semibold text-[#5F747C] dark:text-[#acd0de] 
+          h-auto md:pl-[30%] lg:pl-[45%]"
         >
-          <div
-            className={` flex-[7] sm:flex sm:items-end sm:animate-none
-          ${
-            expandedItem === -1
-              ? "animate-[foldSubheading_0.5s_ease_forwards]"
-              : "animate-[expandSubheading_0.5s_ease_forwards]"
-          }
-          `}
-          >
-            {/* <span>
-              매일 운동을 하면 건강에도 좋고 스트레스 해소에도 도움이 된다고
-              해요.
-            </span> */}
-          </div>
           <ol
-            className={` flex-[10] ${
+            className={` ${
               expandedItem === -1
                 ? "animate-[foldProgramSection_0.5s_ease_forwards]"
                 : "animate-[extendProgramSection_0.5s_ease_forwards]"

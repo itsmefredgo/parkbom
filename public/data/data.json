@@ -7,7 +7,11 @@
       "느려도 뒤로 돌아가 놓친 것을 찾고",
       "계단을 오르다 보면 누구나 할 수 있다.",
       "피하지 말고 부딪혀봐야 인생은 짜릿해진다."
-    ]
+    ],
+    "classes": {
+      "math": ["초등 (1~6)", "중등 (1~3)", "고등 (1~3)", "경시대회 준비"],
+      "english": ["초등 (1~6)", "중등 (1~3)", "고등 (1~3)"]
+    }
   },
   "aboutus": {
     "programs": [
@@ -55,7 +59,73 @@
       }
     ]
   },
-  "classes": {},
+  "classes": {
+    "mathClasses": [
+      {
+        "classTitle": "수학 수업 프로그램",
+        "description": []
+      },
+      {
+        "classTitle": "초등부",
+        "description": [
+          "초등 1~6학년 수업",
+          "주 5회 맞춤 수업",
+          "수학에 관한 재미와 흥미 유발",
+          "수학에 기초를 쌓아가는 단계",
+          "주 1회 수학을 기반으로 한 코딩 원리 수업",
+          "매월 평가를 통한 체계적인 학습 관리"
+        ]
+      },
+      {
+        "classTitle": "중등부",
+        "description": []
+      },
+      {
+        "classTitle": "고등부",
+        "description": []
+      },
+      {
+        "classTitle": "경시대회 준비",
+        "description": []
+      }
+    ],
+    "englishClasses": [
+      {
+        "classTitle": "영어 수업 프로그램",
+        "description": []
+      },
+      {
+        "classTitle": "초등부",
+        "description": []
+      },
+      {
+        "classTitle": "중등부",
+        "description": []
+      },
+      {
+        "classTitle": "고등부",
+        "description": []
+      }
+    ]
+  },
   "arts": {},
-  "contact": {}
+  "contact": {
+    "admissionSteps": [
+      {
+        "stepNumber": 1,
+        "stepTitle": "입학 상담",
+        "stepDescription": "상담은 전화 및 이메일 등으로 예약 후 진행됩니다"
+      },
+      {
+        "stepNumber": 2,
+        "stepTitle": "반 배정",
+        "stepDescription": "상담 후 반을 배정하며 경우에 따라 입학 테스트를 진행 될 수 있습니다."
+      },
+      {
+        "stepNumber": 3,
+        "stepTitle": "등록",
+        "stepDescription": "첫 수업 이전에 수강료를 납부와 수업 동의서 작성이 마무리 됩니다."
+      }
+    ]
+  }
 }

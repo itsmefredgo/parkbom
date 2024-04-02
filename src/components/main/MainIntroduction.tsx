@@ -15,7 +15,7 @@ function MainIntroduction() {
         className="h-[calc(100%-1rem)] w-[calc(100%-1rem)] m-auto 
         rounded-2xl relative overflow-hidden"
       >
-        <div className="pt-[15%] pl-8 absolute z-10 md:pl-20 lg:pl-28">
+        <div className="pt-[20%] sm:pt-[15%] pl-2 absolute z-10 md:pl-20 lg:pl-28">
           <div className=" flex flex-row items-center">
             <Image
               src={parkbom_logo}
@@ -23,7 +23,7 @@ function MainIntroduction() {
               height={100}
               className=" dark:brightness-200 z-10 ml-[0rem]"
             ></Image>
-            <p className=" pt-8 font-bold text-[1.1rem] text-[#33532e]">
+            <p className=" pt-8 font-bold text-[1.1rem] text-[#33532e] dark:text-[#6f9269]">
               {data.main.title}
             </p>
           </div>
@@ -43,8 +43,8 @@ function MainIntroduction() {
         {/* Background image of the introduction */}
         <div
           className=" h-full w-full absolute 
-          bg-[url('/assets/images/mainImages/main-bg.jpeg')]
-          bg-cover bg-top opacity-50 overflow-hidden
+          bg-[url('/assets/images/mainImages/main-bg-bb.jpg')]
+          bg-cover bg-top opacity-30 overflow-hidden
           dark:brightness-50 dark:opacity-80"
         ></div>
       </div>

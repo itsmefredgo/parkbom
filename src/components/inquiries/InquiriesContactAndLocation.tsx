@@ -1,6 +1,4 @@
-import KakaoMap from "../ui/KakaoMap";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaCaretRight } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { PiNotePencilBold } from "react-icons/pi";
@@ -12,16 +10,11 @@ const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${NEXT_PUBLIC_KAKA
 
 function InquiriesAddress() {
   return (
-    <section
-      className=" mx-6 max-w-[60rem]
-                sm:w-[80%] sm:mx-auto
-                laptop:w-[60%]
-      "
-    >
+    <section className=" mx-6 max-w-[60rem] sm:w-[80%] sm:mx-auto laptop:w-[60%]">
       <div className=" mx-[0.25rem]">
         <div
           className=" flex flex-row text-[1.25rem] mb-2
-                  text-[#045329] dark:text-[#BFD6D1] font-bold"
+          text-[#045329] dark:text-[#BFD6D1] font-bold"
         >
           <PiNotePencilBold className=" text-[1.6rem] mr-2 mb-2" />
           <h2>문의</h2>
@@ -41,7 +34,7 @@ function InquiriesAddress() {
       <div className="mx-[0.25rem]">
         <div
           className=" flex flex-row text-[1.25rem] mb-2 mt-14 
-                  text-[#045329] dark:text-[#BFD6D1] font-bold"
+          text-[#045329] dark:text-[#BFD6D1] font-bold"
         >
           <FaLocationDot className=" text-[1.6rem] mr-2" />
           <h2>위치</h2>

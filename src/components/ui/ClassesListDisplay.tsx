@@ -1,19 +1,16 @@
-import {
-  mathClassList,
-  englishClassList,
-} from "../../../public/data/classesListData";
+import data from "@/../public/data/data.json";
 
 type propsType = {
   selectedSubject: string;
 };
 
 function ClassesListDisplay(props: propsType) {
-  let selectedClassList = mathClassList;
+  let selectedClassList = data.classes.mathClasses;
 
   if (props.selectedSubject === "Math") {
-    selectedClassList = mathClassList;
+    selectedClassList = data.classes.mathClasses;
   } else {
-    selectedClassList = englishClassList;
+    selectedClassList = data.classes.englishClasses;
   }
 
   return (

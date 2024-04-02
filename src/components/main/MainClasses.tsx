@@ -5,13 +5,7 @@ import Link from "next/link";
 import { FaCaretRight } from "react-icons/fa6";
 import { PiMathOperationsFill } from "react-icons/pi";
 import { TbMessageLanguage } from "react-icons/tb";
-import { BsListCheck } from "react-icons/bs";
-
-// Importing lists of classes to display
-import {
-  mathTableItems,
-  englishTableItems,
-} from "../../../public/data/classesList";
+import data from "@/../public/data/data.json";
 
 function MainClasses() {
   // Third part of parkbom's main webpage: CLASSES
@@ -48,7 +42,7 @@ function MainClasses() {
                 </div>
               </div>
               <ul className=" flex-[2] text-xl">
-                {mathTableItems.map((mathTableItems, index) => (
+                {data.main.classes.math.map((mathTableItems, index) => (
                   <li className="flex items-center mb-4" key={index}>
                     <FaCaretRight />
                     <Link href={"/classes"}>{mathTableItems}</Link>
@@ -65,7 +59,7 @@ function MainClasses() {
                 </div>
               </div>
               <ul className=" flex-[2] text-xl">
-                {englishTableItems.map((englishTableItems, index) => (
+                {data.main.classes.english.map((englishTableItems, index) => (
                   <li className="flex items-center mb-4" key={index}>
                     <FaCaretRight />
                     <Link href={"/classes"}>{englishTableItems}</Link>

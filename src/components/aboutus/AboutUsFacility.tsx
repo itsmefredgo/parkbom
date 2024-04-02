@@ -1,10 +1,10 @@
 // Importing necessary react icons
-import PlaceHolder from "@/assets/images/temp.jpg";
 import Image from "next/image";
 import facility_1 from "@/../public/assets/images/facilitiesImages/facility_1.jpeg";
 import facility_2 from "@/../public/assets/images/facilitiesImages/facility_2.jpeg";
 import facility_3 from "@/../public/assets/images/facilitiesImages/facility_3.jpeg";
 import facility_4 from "@/../public/assets/images/facilitiesImages/facility_4.jpeg";
+import SectionTitle from "../ui/SectionTitle";
 
 function AboutUsFacility() {
   const facs = [facility_1, facility_2, facility_3, facility_4];
@@ -29,12 +29,7 @@ function AboutUsFacility() {
       my-[10rem] mx-[1rem] sm:mx-auto"
     >
       {/* Heading of the section */}
-      <h2
-        className=" text-[2.5rem] font-bold pb-16 pl-2 border-black 
-        dark:border-[#BFD6D1] text-[#045329] dark:text-[#BFD6D1]"
-      >
-        시설
-      </h2>
+      <SectionTitle title="시설" />
       <div
         className={` grid grid-cols-1 grid-rows-[repeat(4,1fr)] ${facilitiesGridClasses}
         sm:grid-cols-2 sm:grid-rows-[repeat(2,1fr)] gap-2 w-full  `}

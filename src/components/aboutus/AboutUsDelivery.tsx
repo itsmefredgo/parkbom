@@ -1,9 +1,8 @@
 // Importing components
 import TriangleRightEdge from "@/components/ui/TriangularDivider";
 import ClassProgressStep from "@/components/ui/ClassProgressStep";
-
-// Importing classes steps
-import classProgressSteps from "../../../public/data/classProgressSteps";
+import data from "@/../public/data/data.json";
+import SectionTitle from "../ui/SectionTitle";
 
 function AboutUsDelivery() {
   // Third part of parkbom's ABOUT US page
@@ -17,48 +16,45 @@ function AboutUsDelivery() {
         laptop:w-[75rem] mx-auto my-[10rem]"
       >
         {/* Heading of the section */}
-        <h2
-          className=" text-[2.5rem] font-bold pb-16 pl-2 border-black 
-        dark:border-[#BFD6D1] text-[#045329] dark:text-[#BFD6D1]"
-        >
-          수업진행
-        </h2>
+        <SectionTitle title="수업진행" />
 
         {/* Steps of class delivery steps */}
         <div className=" flex flex-col laptop:flex-row transition-[300ms]">
-          {classProgressSteps.map(({ stepTitle, description }, index) => (
-            <>
-              <div
-                className={` relative flex justify-between items-center h-[9rem] 
+          {data.aboutus.delivery.map(
+            ({ deliveryTitle, description }, index) => (
+              <>
+                <div
+                  className={` relative flex justify-between items-center h-[9rem] 
                 bg-[#BFD6D1] dark:bg-[#5b6d68] laptop:rounded-none p-12 laptop:p-0
                 laptop:w-[calc((100%-9rem)/4)] laptop:h-[18rem] 
                 laptop:flex-col laptop:justify-center laptop:gap-4
                     ${
                       index == 0
                         ? "rounded-t-3xl laptop:rounded-l-3xl"
-                        : index == classProgressSteps.length - 1
+                        : index == data.aboutus.delivery.length - 1
                         ? "rounded-b-3xl laptop:rounded-r-3xl"
                         : ""
                     }`}
-                key={index}
-              >
-                <ClassProgressStep
-                  title={stepTitle}
-                  description={description}
-                  index={index}
-                ></ClassProgressStep>
-              </div>
-              {index + 1 != classProgressSteps.length && (
-                /* <TriangleBottomEdge></TriangleBottomEdge> */
-                <TriangleRightEdge
-                  triangleColour={{ light: "#BFD6D1", dark: "#5b6d68" }}
-                  dividerColour={{ light: "#e8e8e8", dark: "#1c1c1c" }}
-                  secondaryAxis="3rem"
-                  wideScreen={false}
-                ></TriangleRightEdge>
-              )}
-            </>
-          ))}
+                  key={index}
+                >
+                  <ClassProgressStep
+                    title={deliveryTitle}
+                    description={description}
+                    index={index}
+                  ></ClassProgressStep>
+                </div>
+                {index + 1 != data.aboutus.delivery.length && (
+                  /* <TriangleBottomEdge></TriangleBottomEdge> */
+                  <TriangleRightEdge
+                    triangleColour={{ light: "#BFD6D1", dark: "#5b6d68" }}
+                    dividerColour={{ light: "#e8e8e8", dark: "#1c1c1c" }}
+                    secondaryAxis="3rem"
+                    wideScreen={false}
+                  ></TriangleRightEdge>
+                )}
+              </>
+            )
+          )}
         </div>
       </div>
     </section>

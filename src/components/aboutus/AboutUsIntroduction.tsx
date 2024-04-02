@@ -1,15 +1,14 @@
 // Parkbom Logo Imports
 import Image from "next/image";
 import parkbom_logo from "@/../public/assets/images/mainImages/parkbom-logo-tpbg.png";
+import SectionTitle from "../ui/SectionTitle";
 
 function AboutUsIntroduction() {
   // First part of parkbom's ABOUT US page
   return (
     // Title and introduction to the website
-    <section
-      // className="px-[5vw] laptop:max-w-[70rem] laptop:mx-auto"
-      className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto"
-    >
+    <section className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto">
+      <SectionTitle title="ABOUT US" />
       <Image
         src={parkbom_logo}
         alt="Parkbom"

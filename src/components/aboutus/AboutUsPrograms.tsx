@@ -7,19 +7,15 @@ import icon5 from "@/../public/assets/icons/programsIcons/program_5.svg";
 import icon6 from "@/../public/assets/icons/programsIcons/program_6.svg";
 import Image from "next/image";
 import data from "@/../public/data/data.json";
+import SectionTitle from "../ui/SectionTitle";
 
 function AboutUsPrograms() {
   const iconsList = [icon1, icon2, icon3, icon4, icon5, icon6];
   // Second part of parkbom's ABOUT US page
   return (
-    <section className=" sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[10rem]">
+    <section className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[10rem]">
       {/* Heading of the section */}
-      <h2
-        className=" text-[2.5rem] font-bold pb-16 pl-2 border-black 
-        dark:border-[#BFD6D1] text-[#045329] dark:text-[#BFD6D1]"
-      >
-        수업방식
-      </h2>
+      <SectionTitle title="수업방식" />
 
       {/* List of program characteristics */}
       <div className=" grid grid-cols-1 tablet:grid-cols-2">
@@ -28,8 +24,8 @@ function AboutUsPrograms() {
           <div
             key={index}
             className={` border-b-2 border-black border-dashed
-            dark:border-[#BFD6D1]
-            p-8 relative ${
+            dark:border-[#BFD6D1] px-8 py-12
+            relative ${
               index % 2 === 0
                 ? " tablet:border-r-2" // Even
                 : "" // Odd

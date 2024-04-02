@@ -108,7 +108,11 @@ export default function Header() {
             key={index}
             onClick={() => mobileOnClick(route)}
             href={route}
-            className=" mr-0 ml-auto mt-4"
+            className={` mr-0 ml-auto mt-4 ${
+              route === currentPage
+                ? " dark:border-[#5ea651] animate-[headerLinkSelect_0.25s_ease_forwards]"
+                : "border-[#00000000]"
+            }`}
           >
             {pageName}
           </Link>
