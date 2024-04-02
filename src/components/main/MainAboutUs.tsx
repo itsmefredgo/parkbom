@@ -3,9 +3,7 @@
 // Imports
 import React, { useState } from "react";
 import Link from "next/link";
-
-// Importing a list of program characteristics and descriptions
-import programItems from "../../../public/data/programs";
+import data from "@/../public/data/data.json";
 
 function MainAboutUs() {
   // State managing current selected program to view description
@@ -66,7 +64,7 @@ function MainAboutUs() {
             }`}
           >
             {/* Looping through the list of programs */}
-            {programItems.map(({ programAttribute, description }, index) => (
+            {data.aboutus.programs.map((program, index) => (
               <li
                 key={index}
                 onClick={() => expandHideItem(index)}
@@ -79,21 +77,19 @@ function MainAboutUs() {
                 }`}
               >
                 <div className=" flex flex-col justify-center">
-                  <div className=" ">{programAttribute}</div>
+                  <div>{program.programTitle}</div>
                   {index === expandedItem && (
                     <div
                       className=" font-normal my-4 
                       animate-[extendMainProgramDescription_0.5s_ease_forwards]"
                     >
-                      {description}
+                      {program.description}
                     </div>
                   )}
                 </div>
-                <div>
-                  <button className=" text-[1.5rem] w-10">
-                    {index === expandedItem ? <>-</> : <>+</>}
-                  </button>
-                </div>
+                <button className=" text-[1.5rem] w-10">
+                  {index === expandedItem ? <>-</> : <>+</>}
+                </button>
               </li>
             ))}
           </ol>

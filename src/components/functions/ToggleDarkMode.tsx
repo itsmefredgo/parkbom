@@ -25,7 +25,7 @@ const ToggleDarkMode = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className=" h-[2rem] w-[2rem]"
+      className=" h-[1.5rem] w-[1.5rem]"
     >
       <IoMoon className="block dark:hidden h-full w-full" />
       <IoMdSunny className="hidden dark:block  h-full w-full" />

@@ -1,6 +1,7 @@
 // Parkbom Logo Imports
 import Image from "next/image";
 import parkbom_logo from "@/../public/assets/images/mainImages/parkbom-logo-tpbg.png";
+import data from "@/../public/data/data.json";
 
 function MainIntroduction() {
   // First part of parkbom's main webpage
@@ -23,7 +24,7 @@ function MainIntroduction() {
               className=" dark:brightness-200 z-10 ml-[0rem]"
             ></Image>
             <p className=" pt-8 font-bold text-[1.1rem] text-[#33532e]">
-              초중고 수학 영어 전문학원 <br />
+              {data.main.title}
             </p>
           </div>
 
@@ -31,11 +32,12 @@ function MainIntroduction() {
             className=" pl-6 opacity-100 z-10 text-[1rem] mt-[2rem]
             text-parkbomDarkText dark:text-parkbomLightText "
           >
-            수학을 잘 하는 왕도는 따로 없다. <br />
-            재능이나 기술이 필요한 것도 아니다. <br />
-            느려도 뒤로 돌아가 놓친 것을 찾고 <br />
-            계단을 오르다 보면 누구나 할 수 있다. <br />
-            피하지 말고 부딪혀봐야 인생은 짜릿해진다.
+            {data.main.introduction.map((line: string, index: number) => (
+              <>
+                {line}
+                <br />
+              </>
+            ))}
           </p>
         </div>
         {/* Background image of the introduction */}
