@@ -2,6 +2,7 @@ import ClassIntroduction from "@/components/aboutus/AboutUsIntroduction";
 import ClassDelivery from "@/components/aboutus/AboutUsDelivery";
 import ClassMethods from "@/components/aboutus/AboutUsPrograms";
 import ClassGallary from "@/components/aboutus/AboutUsFacility";
+import AboutUsClubs from "@/components/aboutus/AboutUsClubs";
 
 export default function AboutUs() {
   return (
@@ -11,12 +12,6 @@ export default function AboutUs() {
       text-[#000000] dark:text-[#F5F5F5] duration-300"
     >
       {/* Page Title */}
-      {/* <div
-        className=" px-[1rem] sm:px-[5rem] lg:max-w-[70rem] mx-auto py-[5rem]
-        text-[#045329] dark:text-[#BFD6D1] text-[3rem] font-bold"
-      >
-        <h1>ABOUT US</h1>
-      </div> */}
 
       {/* Introduction Section */}
       <ClassIntroduction></ClassIntroduction>
@@ -28,6 +23,7 @@ export default function AboutUs() {
       <ClassDelivery></ClassDelivery>
 
       {/* Class Gallary Section */}
+      <AboutUsClubs></AboutUsClubs>
       <ClassGallary></ClassGallary>
     </div>
   );

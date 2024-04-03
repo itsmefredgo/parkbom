@@ -49,7 +49,8 @@ function AboutUsPrograms() {
               <Image
                 src={iconsList[index]}
                 alt="Program Icon"
-                className=" h-[6rem] w-[6rem]"
+                className=" h-[6rem] w-[6rem] "
+                id="programIcon"
               />
             </div>
             <div className=" p-4">{description}</div>

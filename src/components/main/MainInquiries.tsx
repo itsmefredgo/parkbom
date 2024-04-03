@@ -48,11 +48,15 @@ function MainInquiries() {
             </div>
             <div className=" flex-[1] flex flex-row my-4">
               <MdEmail className="mt-1" />
-              <div className="ml-2">parkbom@gmail.com</div>
+              <div className="ml-2">parkbom6661@naver.com</div>
             </div>
             <div className=" flex-[1] flex flex-row my-4">
               <FaPhone className="mt-1" />
-              <div className="ml-2">010-1234-5678</div>
+              <div className="ml-2">055-681-6661 (전화)</div>
+            </div>
+            <div className=" flex-[1] flex flex-row my-4">
+              <FaPhone className="mt-1" />
+              <div className="ml-2">010-4843-6661 (문자만 가능)</div>
             </div>
           </div>
 

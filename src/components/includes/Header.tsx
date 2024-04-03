@@ -13,7 +13,7 @@ export default function Header() {
   const pages: [string, string][] = [
     ["학원 소개", "/aboutus"],
     ["수업", "/classes"],
-    ["문화", "/arts"],
+    // ["클럽", "/clubs"],
     ["문의 및 위치", "/inquiries"],
   ];
 

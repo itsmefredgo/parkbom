@@ -22,3 +22,8 @@ body {
 body {
   overflow-x: hidden;
 }
+
+.dark #programIcon {
+  filter: invert(96%) sepia(4%) saturate(15%) hue-rotate(88deg) brightness(103%)
+    contrast(103%);
+}

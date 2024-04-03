@@ -22,11 +22,15 @@ function InquiriesAddress() {
         <ul className="">
           <li className=" flex flex-row items-center gap-2 text-lg">
             <MdEmail className="" />
-            <div className="">parkbom@gmail.com</div>
+            <div className="">parkbom6661@naver.com</div>
           </li>
           <li className=" flex flex-row items-center gap-2 text-lg">
             <FaPhone className=" text-[1rem] ml-[2px] mb-[3px]" />
-            <div className="">010-1234-5678</div>
+            <div className="">055-681-6661 (전화)</div>
+          </li>
+          <li className=" flex flex-row items-center gap-2 text-lg">
+            <FaPhone className=" text-[1rem] ml-[2px] mb-[3px]" />
+            <div className="">010-4843-6661 (문자만 가능)</div>
           </li>
         </ul>
       </div>
