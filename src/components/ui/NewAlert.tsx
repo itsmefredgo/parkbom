@@ -16,7 +16,7 @@ function NewAlert() {
   function Contents() {
     return (
       <div
-        className={` fixed z-[100] w-screen bg-[#c9e7d1] p-8 flex justify-between
+        className={` fixed z-[100] w-screen bg-[#d3e0d7] p-8 flex justify-between
         ${
           alertOpen
             ? "animate-[slideDown_1s_ease-in-out]"
