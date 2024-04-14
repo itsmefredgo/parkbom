@@ -39,6 +39,17 @@ const config: Config = {
       },
       animation: {
         "dark-mode": "dark-mode 0.3s ease-in-out",
+        "slide-down": "slideDown 15s ease-in-out",
+      },
+      keyframes: {
+        slideDown: {
+          "0%": { transform: "translateY(-20rem)" },
+          "100%": { transform: "translateY(0rem)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(0rem)" },
+          "100%": { transform: "translateY(-20rem)" },
+        },
       },
     },
   },
