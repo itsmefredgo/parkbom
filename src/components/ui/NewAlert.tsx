@@ -5,14 +5,6 @@ import { FaWindowClose } from "react-icons/fa";
 
 function NewAlert() {
   const [alertOpen, setAlertOpen] = useState(true);
-  const [alertstatus, setAlertstatus] = useState(true);
-
-  const closeAlert = () => {
-    setAlertOpen(false);
-    // setTimeout(() => {
-    setAlertstatus(false);
-    // }, 1000);
-  };
 
   return <Contents></Contents>;
 
@@ -20,11 +12,7 @@ function NewAlert() {
     return (
       <div
         className={` fixed z-[100] w-screen bg-[#d3e0d7] p-8 flex justify-between
-        ${
-          alertstatus && alertOpen
-            ? "animate-[slideDown_1s_ease-in-out_forwards]"
-            : "animate-[slideUp_1s_ease-in-out_forwards]"
-        }`}
+        ${alertOpen ? "" : "hidden"}`}
       >
         <div className=" ">
           <h1 className=" text-[1.5rem]">알림 - 토플 시험 안내</h1>
@@ -35,7 +23,7 @@ function NewAlert() {
           </div>
         </div>
         <div className=" flex items-end">
-          <button onClick={() => closeAlert()}>
+          <button onClick={() => setAlertOpen(false)}>
             <FaWindowClose className=" w-[2rem] h-[2rem]" />
           </button>
         </div>
