@@ -4,13 +4,16 @@ import { useState } from "react";
 import { FaWindowClose } from "react-icons/fa";
 
 function NewAlert() {
-  const [alertOpen, setAlertOpen] = useState(true);
+  localStorage.setItem("alertOpen", "open");
+  const [alertOpen, setAlertOpen] = useState(
+    localStorage.getItem("alertOpen") === "open" ? true : false
+  );
 
-  //   if (!alertOpen) {
-  //     <Contents></Contents>;
-  //     setTimeout(() => setAlertOpen(true), 10000);
-  //     return null;
-  //   }
+  function closeAlert() {
+    localStorage.setItem("alertOpen", "closed");
+    setAlertOpen(false);
+  }
+
   return <Contents></Contents>;
 
   function Contents() {
