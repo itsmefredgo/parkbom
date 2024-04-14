@@ -4,6 +4,7 @@ import "@/../styles/globals.css";
 import "@/../styles/animation.css";
 import Header from "@/components/includes/Header";
 import Footer from "@/components/includes/Footer";
+import NewAlert from "@/components/ui/NewAlert";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className=" fred">
       <body className={inter.className}>
+        <NewAlert />
         <Header></Header>
         {children}
         <Footer></Footer>
