@@ -8,10 +8,10 @@ function NewAlert() {
   const [alertstatus, setAlertstatus] = useState(true);
 
   const closeAlert = () => {
-    setAlertstatus(true);
-    setTimeout(() => {
-      setAlertOpen(false);
-    }, 1000);
+    setAlertOpen(false);
+    // setTimeout(() => {
+    setAlertstatus(false);
+    // }, 1000);
   };
 
   return <Contents></Contents>;
@@ -21,9 +21,9 @@ function NewAlert() {
       <div
         className={` fixed z-[100] w-screen bg-[#d3e0d7] p-8 flex justify-between
         ${
-          alertOpen
-            ? "animate-[slideDown_1s_ease-in-out]"
-            : alertstatus && "animate-[slideUp_1s_ease-in-out_forwards]"
+          alertstatus && alertOpen
+            ? "animate-[slideDown_1s_ease-in-out_forwards]"
+            : "animate-[slideUp_1s_ease-in-out_forwards]"
         }`}
       >
         <div className=" ">
@@ -35,7 +35,7 @@ function NewAlert() {
           </div>
         </div>
         <div className=" flex items-end">
-          <button onClick={() => setAlertOpen(false)}>
+          <button onClick={() => closeAlert()}>
             <FaWindowClose className=" w-[2rem] h-[2rem]" />
           </button>
         </div>
