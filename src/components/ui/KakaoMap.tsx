@@ -3,8 +3,7 @@ import Script from "next/script";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 // API Authentication
-const NEXT_PUBLIC_KAKAO_APP_JS_KEY = "a20aabb94c06838f84dfedbcff8aede6";
-const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${NEXT_PUBLIC_KAKAO_APP_JS_KEY}&autoload=false`;
+const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APP_JS_KEY}&autoload=false`;
 
 const KakaoMap = () => {
   return (
