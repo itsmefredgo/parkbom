@@ -6,22 +6,13 @@ import { FaWindowClose } from "react-icons/fa";
 function NewAlert() {
   const [alertOpen, setAlertOpen] = useState(true);
 
-  //   if (!alertOpen) {
-  //     <Contents></Contents>;
-  //     setTimeout(() => setAlertOpen(true), 10000);
-  //     return null;
-  //   }
   return <Contents></Contents>;
 
   function Contents() {
     return (
       <div
         className={` fixed z-[100] w-screen bg-[#d3e0d7] p-8 flex justify-between
-        ${
-          alertOpen
-            ? "animate-[slideDown_1s_ease-in-out]"
-            : "animate-[slideUp_1s_ease-in-out_forwards]"
-        }`}
+        ${alertOpen ? "" : "hidden"}`}
       >
         <div className=" ">
           <h1 className=" text-[1.5rem]">알림 - 토플 시험 안내</h1>
