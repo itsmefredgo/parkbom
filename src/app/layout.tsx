@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className=" fred">
       <body className={inter.className}>
-        <NewAlert />
+        {/* <NewAlert /> */}
         <Header></Header>
         {children}
         <Footer></Footer>
