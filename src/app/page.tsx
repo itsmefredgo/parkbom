@@ -6,7 +6,7 @@ import NewAlert from "@/components/ui/NewAlert";
 
 export default function Home() {
   return (
-    <main>
+    <main> 
 
       <Introduction />
       <Methods />
